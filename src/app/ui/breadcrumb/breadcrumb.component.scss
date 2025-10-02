@@ -1,0 +1,8 @@
+.rtl-breadcrumb {
+  flex-direction: row-reverse;
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 0.5rem;
+  }
+}

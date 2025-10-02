@@ -1,0 +1,93 @@
+table {
+
+    tr {
+        height: 50px;
+    }
+}
+
+thead {
+    border-radius: 10px;
+}
+
+.table> :not(caption)>*>* {
+    padding: 20px;
+
+}
+
+/* Apply border-radius to the first and last cell of the first row in <thead> */
+.table thead tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.table thead tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+/* Apply border-radius to the first and last cell of the last row in <tbody> */
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+
+.table tbody tr:last-child th:first-child,
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:last-child th:last-child,
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Skeleton loading animation */
+@keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+  
+  /* Skeleton Base */
+  .skeleton {
+    background: var(--skeleton-light);
+    background: linear-gradient(
+      90deg,
+      var(--skeleton-light),
+      var(--skeleton-light-anim),
+      var(--skeleton-light)
+    );
+    background-size: 200px 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 4px;
+  }
+  
+  /* Skeleton Variants */
+  .skeleton-text {
+    height: 16px;
+    width: 80%;
+    margin: 5px 0;
+  }
+  
+  .skeleton-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Adjust for dark mode */
+  body.dark-mode .skeleton {
+    background: var(--skeleton-dark);
+    background: linear-gradient(
+      90deg,
+      var(--skeleton-dark),
+      var(--skeleton-dark-anim),
+      var(--skeleton-dark)
+    );
+  }

@@ -1,0 +1,35 @@
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skeleton {
+    background: var(--skeleton-light);
+    background: linear-gradient(
+      90deg,
+      var(--skeleton-light),
+      var(--skeleton-light-anim),
+      var(--skeleton-light)
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+    border-radius: 5px;
+}
+.skeleton-text {
+    width: 100px;
+    height: 16px;
+}
+.skeleton-icon {
+    width: 24px;
+    height: 24px;
+}
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}

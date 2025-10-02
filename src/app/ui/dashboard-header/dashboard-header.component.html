@@ -1,0 +1,37 @@
+<div class="gap-4 gap-lg-0 mt-2 mx-3 row workspace-header">
+    <div class="workspace-header-content-1 col-lg-6 col-12">
+        <span class="title">{{title}}</span>
+        <span class="sub-title">{{description}}</span>
+    </div>
+    <div class="workspace-button-container p-0 p-sm-auto flex-wrap col-lg-6 col-12 justify-content-end">
+        @if (isShowAssociateBtn) {
+        <button class="create-workspace" (click)="handleAssociateBtn.emit()">
+            <i class="fas fa-link text-white" style="font-size: 12px;"></i>
+            <span class="btn-text">{{btnAssociateText}}</span>
+        </button>
+        <img src="../../../../../../assets/svgs/Line.svg" alt="line" />
+        }
+        @if (isShowCreateBtn) {
+        <button class="create-workspace" (click)="handleCreateFloorRouter()">
+            <img src="../../../../../../assets/svgs/Plus.svg" alt="add" />
+            <span class="btn-text">{{btnText}}</span>
+        </button>
+        <!-- its only for device main page  -->
+        <img [class]="isShowAssociateBtn?'d-none d-md-block ':''" src="../../../../../../assets/svgs/Line.svg"
+            alt="line" />
+        }
+
+        @if(isShowViewButton){
+        <div class="view-button-container">
+            <button class="workspace-btn" [class.active]="viewType == 'grid'" (click)="handleView('grid')">
+                <img class="image-icon" src="../../../../../../assets/svgs/Grid Icon.svg" alt="grid" />
+                <span class="text">{{ 'viewToggle.grid' | translate }}</span>
+            </button>
+            <button class="workspace-btn" [class.active]="viewType == 'list'" (click)="handleView('list')">
+                <img class="image-icon" src="../../../../../../assets/svgs/list.svg" alt="list" />
+                <span class="text">{{ 'viewToggle.list' | translate }}</span>
+            </button>
+        </div>
+        }
+    </div>
+</div>

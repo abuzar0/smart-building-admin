@@ -1,0 +1,58 @@
+<app-dashboard-header [title]="'userManagement.header.title' | translate"
+    [description]="'userManagement.header.description' | translate" (handleCreateBtn)="handleCreateEvent()"
+    [btnText]="'userManagement.header.createBtn' | translate"
+    [isShowCreateBtn]="getPermission('User Management','create')" [viewType]="viewType"
+    (toggleView)="toggleView($event)">
+</app-dashboard-header>
+
+
+<app-filter-bar [tabs]="roleList" [classTypeTabs]="'col-12 p-0'" [classTypeSearch]="'col-12'" [classGapRow]="'gap-2'" [isSearchEnable]="true" (TabFilter)="handleTabEvent($event)"
+    (search_Event)="handleSearch($event)"></app-filter-bar>
+
+
+<div class=" mt-3">
+
+    @defer (when !isLoading){
+    @if(viewType=='grid'){
+    @if (userList.length>0) {
+    @if((userList | filterUserType:selectedType |search:searchTrem:'user').length>0){
+    <app-grid-view-user [data]="userList | filterUserType:selectedType |search:searchTrem:'user'"
+         (handleEditEvent)="editUser($event)"
+        (activateEvent)="ActivateUser($event)" (deleteEvent)="deActivateUser($event)"></app-grid-view-user>
+    }@else {
+     <app-not-found-placeholder></app-not-found-placeholder>
+    }
+    }@else {
+    <div class="px-3">
+        <app-empty-state-placeholder></app-empty-state-placeholder>
+    </div>
+    }
+    }@else {
+    @if (userList.length>0) {
+    @if((userList | filterUserType:selectedType |search:searchTrem:'user').length>0){
+    <app-list-view-user [userList]="userList | filterUserType:selectedType |search:searchTrem:'user'"
+        (handleEditEvent)="editUser($event)"
+        (handleActivateEvent)="ActivateUser($event)" (handleDeleteEvent)="deActivateUser($event)"></app-list-view-user>
+    }@else {
+   <app-not-found-placeholder></app-not-found-placeholder>
+    }
+    }@else {
+    <div class="px-3">
+        <app-empty-state-placeholder></app-empty-state-placeholder>
+    </div>
+    }
+    }
+    }@placeholder {
+    @if(viewType=='grid'){
+    <div class="row px-3 ">
+        @for (item of [1,2,3,4,5]; track $index) {
+        <div class="col-lg-3 col-12 ">
+            <app-card-skeleton></app-card-skeleton>
+        </div>
+        }
+    </div>
+    }@else {
+    <app-list-skeleton></app-list-skeleton>
+    }
+    }
+</div>

@@ -1,0 +1,265 @@
+// Import Bootstrap core functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Override Bootstrap Theme Colors
+// $primary: #ff5733;
+// $secondary: #33ff57;
+// $success: #28a745;
+// $danger: #dc3545;
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary,
+//   "success": $success,
+//   "danger": $danger
+// );
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+input,
+textarea,
+select,
+button {
+  font-family: "Muli-Regular";
+  color: #333;
+  font-size: 13px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
+
+
+// Define CSS Variables for Light Mode
+:root {
+  --color-white: #FFF;
+  --color-black: #000;
+  --base-light-blue: #E5F0FF;
+  --color-light-blue: #E9F0FE;
+  --color-dark-gray: #303030;
+  --color-gray-light: #E3E3E3;
+  --color-light-gray: #F7F7F7;
+  --color-dark-gray-medium: #4F4F4F;
+  --color-soft-gray: #ECECEC;
+  --color-medium-gray: #777;
+  --color-bright-blue: #08F;
+  --color-primary-blue: #006FFF;
+  --color-sidebar-blue: #216BF6;
+  --light-blue-bg: #F4F9FF;
+  --color-tabs-active-blue: #6B9CF9;
+  --color-tabs-wrapper-gray: #f9f9f9;
+  --color-card-icon-bg: #e2ebfe;
+  --color-line: #42434a;
+  --accent-clr: #5e63ff;
+  --gray-semi-transparent: #F8F9FA8F;
+  --filter-icon: brightness(0) invert(1);
+  --color-background-liner-gradient: 0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%;
+  --box-shadow-color: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  --input-box-shadow: #cff0ff 0px 10px 10px -5px;
+  --input-focus-border: #12B1D1;
+  --icon-background-light: #DDEBFF;
+  --border-input-light: #9F9F9F;
+  --skeleton-bg: #e9ecef;
+  --skeleton-highlight: #f8f9fa;
+  --card-bg: #ffffff;
+  --card-border: #dee2e6;
+  --skeleton-light: #e0e0e0;
+  --skeleton-dark: #333;
+  --skeleton-light-anim: rgba(255, 255, 255, 0.2);
+  --skeleton-dark-anim: rgba(0, 0, 0, 0.2);
+  --card-bg-overview: #ffffff;
+  --text: #495057;
+  --icon-bg: rgba(13, 110, 253, 0.1);
+
+}
+
+// Dark Mode Overrides
+[data-bs-theme="dark"] {
+  --color-white: #1E1E1E;
+  --color-black: #fff;
+  --base-light-blue: #345175;
+  --color-light-blue: #1E1E1E;
+  --color-dark-gray: #F0F0F0;
+  --color-gray-light: #444;
+  --color-light-gray: #121212 !important;
+  --color-soft-gray: #2C2C2C;
+  --color-dark-gray-medium: #B0B0B0;
+  --color-medium-gray: #AAA;
+  --color-bright-blue: #1E90FF;
+  --color-primary-blue: #0A74DA;
+  --color-sidebar-blue: #0D47A1;
+  --light-blue-bg: #1E2A36;
+  --color-tabs-active-blue: #508BDA;
+  --color-tabs-wrapper-gray: #181818;
+  --color-card-icon-bg: #292929;
+  --color-line: #42434a;
+  --accent-clr: #5e63ff;
+  --gray-semi-transparent: #2C2F338F;
+  --filter-icon: brightness(1) invert(0);
+  --filter-default: brightness(1) invert(1);
+  --color-background-liner-gradient: linear-gradient(0deg, rgb(30, 30, 30) 0%, rgb(50, 50, 50) 100%);
+  --box-shadow-color: rgba(50, 100, 150, 0.4) 0px 30px 30px -20px;
+  --input-box-shadow: rgba(50, 100, 150, 0.5) 0px 10px 10px -5px;
+  --input-focus-border: #1CA1C1;
+  --icon-background-light: #162B42;
+  --border-input-light: #C0C0C0;
+  --skeleton-bg: #343a40;
+  --skeleton-highlight: #495057;
+  --card-bg: #212529;
+  --card-border: #495057;
+  --skeleton-light: #444;
+  --skeleton-dark: #555;
+  --skeleton-light-anim: rgba(255, 255, 255, 0.1);
+  --skeleton-dark-anim: rgba(0, 0, 0, 0.1);
+  /* Dark mode colors */
+  --card-bg-overview: #2c3e50;
+  --text: #e9ecef;
+  --icon-bg: rgba(255, 255, 255, 0.1);
+
+}
+
+$table-bg: var(--color-white);
+$table-hover-bg: var(--base-light-blue);
+$table-border-width: 2px;
+
+body {
+  background-color: var(--color-soft-gray) !important;
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+}
+
+.back-icon {
+  font-size: 20px;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--card-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+}
+
+input::-ms-reveal,
+input::-webkit-credentials-auto-fill-button,
+input::-webkit-textfield-decoration-container {
+  display: none !important;
+}
+
+
+.border-bottom-0 {
+  border-bottom: 0px !important;
+}
+
+[dir='rtl'] .input-group-text {
+  border-top-right-radius: var(--bs-border-radius) !important;
+  border-bottom-right-radius: var(--bs-border-radius) !important;
+  border-top-left-radius: initial !important;
+  border-bottom-left-radius: initial !important;
+}
+
+[dir='rtl'] .form-control {
+  border-top-left-radius: var(--bs-border-radius) !important;
+  border-bottom-left-radius: var(--bs-border-radius) !important;
+  border-top-right-radius: initial !important;
+  border-bottom-right-radius: initial !important;
+}
+
+[dir='rtl'] .list-wrapper {
+  text-align: right !important;
+}
+
+[dir='rtl'] .back-icon {
+  transform: rotate(180deg) !important;
+}
+
+
+[dir='rtl'] .notification-item {
+  border-right: 4px solid #0dfd21 !important;
+  border-left: 0px !important;
+}
+
+[dir='rtl'] #toggle-btn {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .breadcrumb {
+
+  justify-content: end;
+}
+
+[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before {
+  content: "/";
+  padding-right: 0.5rem;
+  padding-left: 0;
+}
+
+[dir="rtl"] .home-button-text {
+  margin-left: 0px !important;
+  margin-right: 45px;
+}
+
+[dir="rtl"] .home-button {
+  right: unset !important;
+  left: 30px !important;
+
+  &:hover {
+    .home-icon {
+      right: 10px !important;
+    }
+  }
+}
+
+[dir="rtl"] .logo{
+   left: unset !important;
+   right: 30px !important;
+}
+
+[dir="rtl"] .arrow-icon{
+  rotate: 180deg !important;
+}
+
+[dir="ltr"] .password-toggle-btn {
+  right: 10px;
+  left: auto;
+}
+
+[dir="rtl"] .password-toggle-btn {
+  left: 10px;
+  right: auto;
+}
+// [dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+//   content: "";
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+
+
+// [dir='rtl'] input[type="datetime-local"] {
+//   text-align: right;
+// }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

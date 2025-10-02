@@ -1,0 +1,63 @@
+.pagination_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .pagination-first a,
+  .pagination-previous a,
+  .pagination-next a,
+  .pagination-last a,
+  .page__number {
+    display: flex;
+    height: 32px;
+    min-width: 32px;
+    padding: 7.5px 7.5px 6.5px 7.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    font-family: 'Inter Variable';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--color-dark-gray-medium);
+    cursor: pointer;
+  }
+  
+  .page__number.active {
+    background: #08f;
+    color: white;
+    // font-weight: bold;
+  }
+  
+  /* Hover Effect ONLY for Non-Active & Non-Disabled Elements */
+//   a:not(.disabled):not(.active):hover,
+//   .page__number:not(.active):not(.disabled):hover {
+//     background: var(--color-dark-gray);
+//     color: var(--text-white);
+//   }
+  
+  /* Disabled State for All (Gray Color + No Click) */
+  
+  .pagination-first.disabled a,
+  .pagination-last.disabled a,
+  .pagination-previous.disabled a,
+  .pagination-next.disabled a {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: transparent;
+    pointer-events: none;
+  }
+  
+  .pagination-previous {
+    margin-right: 8px;
+  }
+  
+  .pagination-next {
+    margin-left: 8px;
+  }
+  

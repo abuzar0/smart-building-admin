@@ -1,0 +1,122 @@
+.workspace-header {
+    margin-top: 30px;
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    .workspace-header-content-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+
+        .title {
+            color: var(-color-dark-gray);
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -0.21px;
+        }
+
+        .sub-title {
+            color: var( #777);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            line-height: normal;
+        }
+    }
+
+    .workspace-button-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .create-workspace {
+            display: flex;
+            height: 28px;
+            padding: 0px 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 6px;
+            background: #006FFF;
+            border: 0px;
+            cursor: pointer;
+
+            .btn-text {
+                color: #FFF;
+
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                text-transform: capitalize;
+            }
+
+            &:hover {
+                background: #08F;
+            }
+        }
+
+        .view-button-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .workspace-btn {
+                display: flex;
+                height: 28px;
+                padding: 0px 8px;
+                align-items: center;
+                gap: 8px;
+                border-radius: 4px;
+                background: var(--color-light-gray);
+                border: 0px;
+                cursor: pointer;
+
+                .text {
+                    color: var(--color-black);
+
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
+                .image-icon {
+                    filter:var(--filter-default);
+                }
+
+                &:hover {
+                    background: var(--color-soft-gray);
+                    .image-icon {
+                        filter:var(--filter-default);
+                    }
+    
+                }
+               
+                &.active {
+                    background: var(--color-dark-gray);
+
+                    .image-icon {
+                        filter: var(--filter-icon);
+                    }
+
+                    .text {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width:790px) {
+    .btn-text{
+        font-size: 11px !important;
+    }
+}

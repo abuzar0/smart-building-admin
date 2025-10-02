@@ -1,0 +1,63 @@
+<div class="wrapper vh-100">
+    <div class="d-flex justify-content-end px-2 py-3 w-100">
+        <div class="form-group d-flex align-items-center">
+            <!-- {{ 'header.languageLabel' | translate }} -->
+            <!-- <label for="languageSelect" class="mx-2 fw-semibold">🌐</label> -->
+            <select id="languageSelect" class="form-select w-auto fs-13" [(ngModel)]="selectedLang"
+                (change)="switchLang(selectedLang)">
+                <option value="en">{{ 'header.english' | translate }}</option>
+                <option value="ar">{{ 'header.arabic' | translate }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="container">
+            <div class="heading">{{ 'login.title' | translate }}</div>
+
+            <form class="form" [formGroup]="form" (ngSubmit)="handleClick()">
+                <label>{{ 'login.email' | translate }}</label>
+                <input required autocomplete="off" formControlName="email" class="input" type="email" id="email"
+                    [placeholder]="'login.emailPlaceholder' | translate"  maxlength="50" />
+                @if (form.get('email')?.touched && form.get('email')?.invalid) {
+                <div class="text-danger fs-11">
+                    @if (form.get('email')?.errors?.['required'] || form.get('email')?.errors?.['email']) {
+                    {{ 'validation.emailFormat' | translate }}
+                    }
+                    @else if (form.get('email')?.errors?.['maxlength']) {
+                    {{ 'validation.emailMaxLength' | translate }}
+                    }
+                </div>
+                }
+                <label>{{ 'login.password' | translate }}</label>
+                <div class="password-container" style="position: relative;">
+                    <input required autocomplete="new-password" formControlName="password" class="input"
+                        [type]="showPassword ? 'text' : 'password'" id="password"
+                        [placeholder]="'login.passwordPlaceholder' | translate" maxlength="24" />
+
+                    <button type="button" (click)="togglePassword()" class="password-toggle-btn ">
+                        <i [class]="showPassword ? 'fa fa-eye-slash' : 'fa fa-eye'"></i>
+                    </button>
+                </div>
+                <!-- @if (form.get('password')?.touched && form.get('password')?.invalid) {
+                <div class="text-danger fs-11">
+                    @if (form.get('password')?.errors?.['required']
+                    || form.get('password')?.errors?.['minlength']
+                    || form.get('password')?.errors?.['maxlength']) {
+                    {{ 'validation.passwordLength' | translate }}
+                    }
+                    @else if (form.get('password')?.errors?.['passwordPattern']) {
+                    {{ 'validation.passwordPattern' | translate }}
+                    }
+                </div>
+                } -->
+                <span class="forgot-password">
+                    <a [routerLink]="'/authentication/forgot-password'">{{ 'login.forgotPassword' | translate }}</a>
+                </span>
+
+                <button class="login-button" type="submit" [disabled]="form.invalid">
+                    {{ 'login.button' | translate }}
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.card {
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: var(--color-white);
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, var(--skeleton-bg) 0%, var(--skeleton-highlight) 50%, var(--skeleton-bg) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 5px;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton-icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.skeleton-text {
+    height: 20px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.skeleton-number {
+    height: 30px;
+    width: 50%;
+    margin: 10px auto;
+}

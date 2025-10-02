@@ -1,0 +1,127 @@
+.list-container {
+  list-style: none;
+  border: 1px solid;
+  background: var(--color-white);
+  // box-shadow: 1px 1px 1px grey;
+  border-radius: 5px;
+  width: auto;
+}
+
+.container {
+  // width: 200px;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+  color: var(--color-black);
+}
+
+.label {
+  color: var(--color-black);
+  margin-bottom: 5px;
+}
+
+.caret {
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--color-black);
+  transition: 0.3s;
+}
+
+.select {
+  cursor: pointer;
+  transition: 0.3s;
+  // background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+
+.menu {
+  /* visibility: hidden;  */
+  // background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s;
+  z-index: 1;
+  list-style: none;
+  margin: 2px 0px;
+  padding: 0px;
+  // box-shadow: 1px 1px 10px gray;
+  max-height: 250px;
+  overflow-y: auto;
+  // Default: dropdown opens downward
+  bottom: auto;
+  top: 100%;
+  position: absolute;
+
+  &.open-up {
+    top: auto;
+    bottom: 100%;
+  }
+
+
+}
+
+
+
+
+
+.menu li {
+  cursor: pointer;
+  margin: 0px;
+  padding: 10px;
+  text-transform: capitalize;
+  color: var(--color-black);
+
+}
+
+.select-item {
+  color: #fff !important;
+  background-color: var(--color-sidebar-blue) !important;
+  width: 100% !important;
+  /* Add your desired styling for the selected item */
+}
+
+.sub-text {
+  font-size: 12px;
+}
+
+.menu li:hover {
+  background-color: var(--base-light-blue);
+}
+
+.menu-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.input-field {
+
+  width: 100%;
+  display: flex;
+  margin: 2px auto;
+  position: sticky;
+  top: 1px;
+
+}
+
+.input-field .text-field {
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin: 0px auto;
+}

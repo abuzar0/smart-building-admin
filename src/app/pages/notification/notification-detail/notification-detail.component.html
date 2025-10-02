@@ -1,0 +1,66 @@
+<div class="row w-100 mx-md-0 mx-auto">
+    <div class="card py-3 col-md-11 col-12 mx-auto mt-0 mt-md-3">
+        <div class="align-item-center d-flex gap-4 header">
+            <div class="text-center">
+                <a (click)="location.back()" class="btn"><i class="fas fa-arrow-left back-icon"></i></a>
+            </div>
+            <h3 class="text-center title-heading">{{ 'alerts.detail.notificationDetail' | translate }}</h3>
+        </div>
+
+
+        @defer (when !isLoading) {
+        <div class="notification-card" [class]="getNotifyType(notifyDetail.notification_type)">
+            <!-- Change "success" to "warning", "error", "info" -->
+            <div class="icon-container">
+                <i [class]="getTypeIcon(notifyDetail.notification_type)"></i> <!-- Icon changes dynamically -->
+            </div>
+            <h5 class="notification-title" id="notification-title">{{ 'alerts.title' | translate }}</h5>
+            <p class="notification-description" id="notification-description">
+                {{ ('alerts.' + notifyDetail.alert_type_device) | translate: {
+                device: notifyDetail.data_params.device,
+                location:notifyDetail.data_params.location,
+                value: notifyDetail.data_params.value
+                } }}
+            </p>
+            <p class="notification-time"><strong>{{ 'alerts.detail.time' | translate }}:</strong> <span
+                    id="notification-time"> {{ notifyDetail.created |
+                    date: 'yyyy-MM-dd hh:mm a' | timeUnit}}</span>
+            </p>
+
+            @if(notifyDetail.data_params.location!='Floor'){
+                <!-- 🌟 IoT Device Details Table -->
+                <table class="iot-table">
+                    <thead>
+                        <tr>
+                            <th>{{ 'alerts.detail.attribute' | translate }}</th>
+                            <th>{{ 'alerts.detail.details' | translate }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-microchip"></i> {{ 'alerts.detail.deviceName' | translate }}</td>
+                            <td id="device-name">{{notifyDetail.device_id.name}}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-id-badge"></i> {{ 'alerts.detail.deviceId' | translate }}</td>
+                            <td id="device-id">{{notifyDetail.device_id.device_id}}</td>
+                        </tr>
+                        <!-- <tr>
+                                <td><i class="fas fa-map-marker-alt"></i> Connectivity Status </td>
+                                <td id="device-location">{{notifyDetail.device_id.}}</td>
+                            </tr> -->
+                        <tr>
+                            <td><i class="fas fa-map-marker-alt"></i> {{ 'alerts.detail.location' | translate }}</td>
+                            <td id="device-location">{{notifyDetail.device_id.location.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            }
+        </div>
+
+        }@placeholder {
+        <app-list-skeleton></app-list-skeleton>
+        }
+
+    </div>
+</div>

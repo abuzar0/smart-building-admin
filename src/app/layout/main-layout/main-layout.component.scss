@@ -1,0 +1,141 @@
+.sidebar-container {
+    width: 250px;
+    transition: width 0.3s ease;
+
+    &.collapsed {
+        width: 60px;
+    }
+}
+
+.content-container {
+    flex-grow: 1;
+    width: calc(100% - 250px); // Default width when sidebar is open
+    transition: width 0.3s ease;
+
+    &.expanded {
+        width: calc(100% - 60px); // Adjust when sidebar is collapsed
+    }
+}
+
+.page-content {
+    padding: 20px;
+}
+
+@media(max-width: 800px) {
+    .sidebar-container {
+        width: auto !important;
+    }
+}
+
+.home-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(45deg, #006FFF, #006FFF);
+    border: none;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(39, 57, 174, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+    cursor: pointer;
+    overflow: hidden;
+    //  width: 180px;
+}
+
+.home-button:hover {
+    width: 180px;
+    justify-content: flex-start;
+    padding-left: 18px;
+    box-shadow: 0 12px 35px rgba(43, 39, 174, 0.4);
+    background: linear-gradient(45deg, #006FFF, #006FFF);
+    color: white;
+    text-decoration: none;
+}
+
+.home-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 6px 15px rgba(39, 79, 174, 0.3);
+}
+
+.home-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    transition: transform 0.3s ease;
+    stroke-width: 2;
+    fill: none;
+    stroke: currentColor;
+}
+
+.home-button-text {
+    margin-left:36px;
+    // white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.1s ease;
+}
+
+.home-button:hover .home-button-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.home-button:hover .home-icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+    .home-button {
+        bottom: 70px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .home-button:hover {
+        width: 160px;
+    }
+
+    .home-icon {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+    }
+
+    .home-button-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Floating animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.home-button {
+    animation: float 3s ease-in-out infinite;
+}
+
+.home-button:hover {
+    animation: none;
+}
+
+

@@ -1,0 +1,94 @@
+<div class="role-card h-100 position-relative">
+    <!-- Card Header -->
+    <div class="role-header">
+        <h3 class="role-title">
+            <div class="role-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            {{ user.username }} ({{ user.role.type }})
+        </h3>
+
+        <span class="role-status" [class.status-active]="user.isActive" [class.status-inactive]="!user.isActive">
+            <i class="fas fa-check-circle"></i>
+            {{ user.isActive ? 'Active' : 'Inactive' }}
+        </span>
+    </div>
+
+    <!-- User Email -->
+    <div class="role-email text-muted text-center mb-3">
+        <i class="fas fa-envelope"></i> {{ user.email }}
+    </div>
+
+    <!-- Permissions Section -->
+    <div class="role-body mb-5">
+        <h6 class="text-center text-muted mb-3">Permissions</h6>
+
+        @if(user.role.permission){
+        <div class="accordion" id="permissionsAccordion">
+            <div class="accordion-item" *ngFor="let permission of user.role?.permission; let i = index">
+                <h2 class="accordion-header" [attr.id]="'heading' + i+user._id">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        [attr.data-bs-target]="'#collapse' + i+user._id" aria-expanded="false"
+                        [attr.aria-controls]="'collapse' + i+user._id">
+                        {{ permission.name }}
+                    </button>
+                </h2>
+
+                <div [attr.id]="'collapse' + i+user._id" class="accordion-collapse collapse"
+                    [attr.aria-labelledby]="'heading' + i+user._id">
+                    <!-- 🛑 Removed data-bs-parent="#permissionsAccordion" here -->
+
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6 mb-2" *ngFor="let perm of permissionList">
+                                <div class="d-flex align-items-center border rounded p-2 shadow-sm">
+                                    <i class="bi me-2" [ngClass]="{
+                                'bi-check-circle-fill text-success': permission.actions[perm.key],
+                                'bi-x-circle-fill text-danger': !permission.actions[perm.key]
+                              }">
+                                    </i>
+                                    <span class="fw-bold flex-grow-1">{{ perm.label }}</span>
+                                    <span class="badge rounded-pill px-3 py-2"
+                                        [ngClass]="permission.actions[perm.key] ? 'bg-success' : 'bg-danger'">
+                                        {{ permission.actions[perm.key] ? 'Allowed' : 'Denied' }}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        }
+
+        <!-- Action Buttons -->
+        <div class="role-actions">
+            @if(!user.isActive && getPermission('User Management','restore')){
+            <button class="btn btn-action btn-edit" title="Active User" (click)="handleActivate($event, user)">
+                <i class="fa-solid fa-trash-can-arrow-up"></i>
+            </button>
+            }
+            <!-- @if(!userAssigneeListId.includes(user._id) && getPermission('User Management','assignee') && user.isActive){
+            <button class="btn btn-action btn-edit" title="Assignee User" (click)="handleAssignee($event, user)">
+                <i class="fa-solid fa-users-cog"></i>
+            </button>
+
+            } -->
+            @if(user.isActive){
+            @if(getPermission('User Management','edit') ){
+            <button class="btn btn-action btn-edit" title="Deactivate User" (click)="handleEdit($event, user)">
+                <i class="fa-solid fa-edit"></i>
+            </button>
+            }
+            @if(getPermission('User Management','delete') ){
+            <button class="btn btn-action btn-delete" title="Deactivate User" (click)="handleDelete($event, user)">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            }
+            }
+        </div>
+    </div>

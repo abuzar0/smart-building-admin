@@ -1,0 +1,52 @@
+<div class="role-card">
+  <!-- Card Header -->
+  <div class="role-header">
+      <h3 class="role-title">
+          <div class="role-icon">
+              <i class="fas fa-shield-alt"></i>
+          </div>
+         {{ item.name }}
+      </h3>
+
+      <span class="role-status" [class.status-active]="item.isActive" [class.status-inactive]="!item.isActive">
+        <i class="fas fa-check-circle"></i>
+       {{ item.isActive ? 'Active' : 'Inactive' }}
+    </span>
+  </div>
+
+  <!-- Permissions Section -->
+  <div class="role-body">
+      <h6 class="text-center text-muted mb-3">Permissions</h6>
+      <div class="row">
+        <div class="col-6 mb-2" *ngFor="let permission of permissionList">
+          <div class="d-flex align-items-center border rounded p-2  shadow-sm">
+            <i class="bi me-2" 
+               [ngClass]="{
+                 'bi-check-circle-fill text-success': item.actions[permission.key],
+                 'bi-x-circle-fill text-danger': !item.actions[permission.key]
+               }">
+            </i>
+            <span class="fw-bold flex-grow-1">{{ permission.label }}</span>
+            <span class="badge rounded-pill px-3 py-2" 
+                  [ngClass]="item.actions[permission.key] ? 'bg-success' : 'bg-danger'">
+              {{ item.actions[permission.key] ? 'Allowed' : 'Denied' }}
+            </span>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="role-actions">
+    <!-- @if (!item.isActive) {
+      <button class="btn btn-action btn-edit" title="Active Permission">
+          <i class="fa-solid fa-trash-can-arrow-up"></i>
+      </button>
+    } -->
+    @if(item.isActive){
+      <button class="btn btn-action btn-delete" title="InActive Permission" (click)="handleDelete($event,item)">
+          <i class="fas fa-trash-alt"></i>
+      </button>
+    }
+  </div>
+</div>

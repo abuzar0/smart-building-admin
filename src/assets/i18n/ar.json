@@ -1,0 +1,1736 @@
+{
+  "HELLO": "مرحبا",
+  "WELCOME": "أهلا بك",
+  "login": {
+    "title": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "button": "تسجيل الدخول",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "passwordPlaceholder": "أدخل كلمة المرور الخاصة بك"
+  },
+  "forgot": {
+    "title": "نسيت كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "button": "استعادة كلمة المرور",
+    "back": "العودة لتسجيل الدخول"
+  },
+  "resetPassword": {
+    "title": "إعادة تعيين كلمة المرور",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور الجديدة",
+    "newPasswordPlaceholder": "أدخل كلمة المرور الجديدة",
+    "confirmPasswordPlaceholder": "تأكيد كلمة المرور الجديدة",
+    "requiredNewPassword": "كلمة المرور الجديدة مطلوبة.",
+    "minLength": "يجب أن تكون 8 أحرف على الأقل.",
+    "requiredConfirmPassword": "تأكيد كلمة المرور مطلوب.",
+    "mismatch": "كلمتا المرور غير متطابقتين.",
+    "cancel": "إلغاء",
+    "update": "تحديث كلمة المرور"
+  },
+  "updatePassword": {
+    "title": "تحديث كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور الجديدة",
+    "placeholders": {
+      "current": "كلمة المرور الحالية",
+      "new": "أدخل كلمة المرور الجديدة",
+      "confirm": "تأكيد كلمة المرور الجديدة"
+    },
+    "errors": {
+      "requiredCurrent": "كلمة المرور الحالية مطلوبة.",
+      "minLengthCurrent": "يجب أن تكون 6 أحرف على الأقل.",
+      "requiredNew": "كلمة المرور الجديدة مطلوبة.",
+      "minLengthNew": "يجب أن تكون 8 أحرف على الأقل.",
+      "requiredConfirm": "تأكيد كلمة المرور مطلوب.",
+      "mismatch": "كلمتا المرور غير متطابقتين."
+    },
+    "buttons": {
+      "skip": "تخطي الآن",
+      "update": "تحديث كلمة المرور"
+    }
+  },
+  "header": {
+    "languageLabel": "اللغة",
+    "english": "English",
+    "arabic": "العربية",
+    "theme": {
+      "light": "الوضع الفاتح",
+      "dark": "الوضع الداكن"
+    },
+    "notification": {
+      "title": "الإشعارات",
+      "empty": "لا توجد إشعارات",
+      "viewAll": "عرض الكل"
+    },
+    "profile": {
+      "settings": "إعدادات الحساب",
+      "logout": "تسجيل الخروج"
+    }
+  },
+  "building_header": {
+    "title": "بناء مستقبل أكثر ذكاءً",
+    "subtitle": "إدارة المبنى الخاص بك على بعد نقرة واحدة.",
+    "createButton": "إنشاء مبنى جديد",
+    "view": {
+      "grid": "شبكة",
+      "list": "قائمة"
+    }
+  },
+  "buildingCard": {
+    "devicesFloorsInfo": "{{count}} جهاز مثبت و {{floors}} طابق.",
+    "exploreButton": "استكشاف",
+    "device": "الأجهزة",
+    "floor": "الطوابق"
+  },
+  "buildingList": {
+    "index": "#",
+    "name": "اسم المبنى",
+    "address": "العنوان",
+    "overview": "نظرة عامة",
+    "devicesFloorsInfo": "{{count}} جهاز مثبت و {{floors}} طابق.",
+    "device": "الأجهزة",
+    "floor": "الطوابق"
+  },
+  "buildingForm": {
+    "title": {
+      "create": "إنشاء مبنى",
+      "update": "تحديث المبنى"
+    },
+    "nameLabel": "اسم المبنى",
+    "namePlaceholder": "اختر اسمًا للمبنى",
+    "addressLabel": "عنوان المبنى",
+    "addressPlaceholder": "اختر عنوانًا للمبنى",
+    "typeLabel": "نوع المبنى",
+    "countryLabel": "الدولة",
+    "countryPlaceholder": "اختر الدولة",
+    "regionLabel": "المنطقة",
+    "regionPlaceholder": "اختر المنطقة",
+    "providerLabel": "مزود الكهرباء",
+    "providerPlaceholder": "اختر مزود الكهرباء",
+    "cancel": "إلغاء",
+    "create": "إنشاء",
+    "update": "تحديث"
+  },
+  "buildingTypes": {
+    "commercial": {
+      "title": "مبنى تجاري",
+      "description": "متاجر / مكاتب / مساحات تجزئة"
+    },
+    "residential": {
+      "title": "مبنى سكني",
+      "description": "شقق / منازل / فيلات"
+    },
+    "industrial": {
+      "title": "مبنى صناعي",
+      "description": "مصانع / مستودعات / منشآت"
+    },
+    "institutional": {
+      "title": "مبنى مؤسسي",
+      "description": "مدارس / مستشفيات / حكومية"
+    },
+    "mixed-use": {
+      "title": "مبنى متعدد الاستخدام",
+      "description": "مساحات سكنية وتجارية"
+    }
+  },
+  "building_dashboard": {
+    "total_floors": "إجمالي الطوابق",
+    "total_rooms": "إجمالي الغرف",
+    "total_devices": "إجمالي الأجهزة",
+    "online_devices": "الأجهزة المتصلة",
+    "offline_devices": "الأجهزة غير المتصلة",
+    "today_energy_used": "الطاقة المستخدمة اليوم",
+    "today_energy_cost": "تكلفة الطاقة اليوم",
+    "total_people": "إجمالي الأشخاص",
+    "avg_temperature": "متوسط درجة الحرارة",
+    "avg_humidity": "متوسط الرطوبة",
+    "avg_co2_level": "متوسط مستوى ثاني أكسيد الكربون",
+    "last_24_hours": "آخر 24 ساعة",
+    "energy_consumption_cast": "رسم استهلاك الطاقة",
+    "user_name": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "unassign": "إلغاء التعيين"
+  },
+  "sidebar": {
+    "dashboard": "لوحة القيادة",
+    "manage_building": "إدارة المبنى",
+    "floor": "طابق",
+    "room": "غرفة",
+    "devices": "الأجهزة",
+    "reports": "التقارير",
+    "schedular": "الجدولة",
+    "threshold": "الحدود",
+    "role_access": "الدور والوصول",
+    "manage_user": "إدارة المستخدم",
+    "favorite": "المفضل"
+  },
+  "report": {
+    "header": {
+      "title": "لوحة تقارير المباني الذكية",
+      "description": "تتبع تنبيهات الأجهزة، واستخدام الطاقة، وحالة المبنى في الوقت الفعلي لتحسين الكفاءة والعمليات الذكية."
+    },
+    "form": {
+      "reportType": {
+        "label": "نوع التقرير",
+        "placeholder": "اختر نوع التقرير"
+      },
+      "floor": {
+        "label": "الطابق",
+        "placeholder": "اختر الطابق"
+      },
+      "startDate": {
+        "label": "تاريخ البدء",
+        "error": "تاريخ البدء مطلوب ولا يمكن أن يكون في المستقبل."
+      },
+      "endDate": {
+        "label": "تاريخ الانتهاء",
+        "error": "تاريخ الانتهاء لا يمكن أن يكون قبل تاريخ البدء."
+      },
+      "button": "توليد التقرير"
+    },
+    "table": {
+      "deviceName": "اسم الجهاز",
+      "locationName": "اسم الموقع",
+      "locationType": "نوع الموقع",
+      "importEnergy": "الطاقة المستوردة",
+      "estimatedCost": "التكلفة المقدرة",
+      "eventDate": "تاريخ الحدث",
+      "temperature": "درجة الحرارة (°م)",
+      "humidity": "الرطوبة (%)",
+      "co2": "ثاني أكسيد الكربون (جزء في المليون)",
+      "leakStatus": "حالة التسرب",
+      "smokeStatus": "حالة الدخان",
+      "leakDetected": "تم الكشف عن تسرب",
+      "smokeDetected": "تم الكشف عن الدخان",
+      "noLeak": "لا يوجد تسرب"
+    },
+    "export": {
+      "csv": "تصدير CSV",
+      "pdf": "تصدير PDF"
+    }
+  },
+  "userManagement": {
+    "header": {
+      "title": "إدارة المستخدمين في المبنى الذكي",
+      "description": "قم بإدارة أدوار المستخدمين والحسابات والأذونات لضمان وصول آمن وفعال إلى المبنى الذكي. خصص الأدوار، وقم بتنشيط/تعطيل المستخدمين، وعزز الأمان.",
+      "createBtn": "إنشاء مستخدم جديد"
+    },
+    "form": {
+      "title": {
+        "create": "إنشاء مستخدم",
+        "update": "تحديث مستخدم"
+      },
+      "username": {
+        "label": "اسم المستخدم",
+        "placeholder": "أدخل اسم المستخدم"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل البريد الإلكتروني"
+      },
+      "role": {
+        "label": "اختر الدور",
+        "placeholder": "اختر الدور"
+      },
+      "building": {
+        "label": "اختر المبنى",
+        "placeholder": "تعيين المبنى"
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "submit": "إرسال"
+      }
+    }
+  },
+  "modal": {
+    "assigne": {
+      "title": "هل أنت متأكد؟",
+      "text": "عن طريق إضافة هذا المستخدم إلى المبنى، سيحصلون على الوصول إلى المنشآت وأي مرافق مرتبطة استنادًا إلى الأذونات والأدوار المعينة لهم.",
+      "cancel": "إلغاء",
+      "assignee": "المكلف"
+    },
+    "delete": {
+      "title": "هل أنت متأكد؟",
+      "text": "تعطيل هذا المستخدم لا يمكن التراجع عنه فوراً. من خلال تعطيل هذا المستخدم، سيتم تقييد وصوله، وسيتم تعطيل جميع الإعدادات والأذونات المرتبطة به.",
+      "cancel": "إلغاء",
+      "delete": "حذف"
+    },
+    "activate": {
+      "title": "هل أنت متأكد؟",
+      "text": "حساب هذا المستخدم غير نشط حالياً. من خلال تفعيل هذا المستخدم، سيتم استعادة وصوله، وسيتلقى جميع الإعدادات والأذونات المرتبطة به.",
+      "cancel": "إلغاء",
+      "activate": "تفعيل"
+    },
+    "role_modal": {
+      "text": "بمجرد الحذف، لا يمكن التراجع عن هذا الإجراء. بحذف هذا الدور، سيتم حذفه نهائيًا مع جميع الإعدادات والمستخدمين والبيانات المرتبطة به.",
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "meta": {
+        "created": "تاريخ الإنشاء",
+        "updated": "تاريخ التحديث"
+      }
+    }
+  },
+  "roles_responsibilities": {
+    "title": "الأدوار والمسؤوليات في إدارة المباني الذكية",
+    "description": "قم بتعريف أدوار المستخدمين وصلاحياتهم لضمان التحكم السلس والأتمتة في المبنى الذكي الخاص بك.",
+    "create_button": {
+      "role": "إنشاء دور جديد",
+      "permission": "إنشاء صلاحية جديدة"
+    },
+    "tabs": {
+      "role": "الأدوار",
+      "permission": "الصلاحيات"
+    },
+    "form": {
+      "title": {
+        "create": "إنشاء دور",
+        "update": "تحديث دور"
+      },
+      "role_name_label": "اسم الدور",
+      "role_name_placeholder": "اختر اسمًا لهذا الدور",
+      "table": {
+        "check_all": "تحديد الكل",
+        "number": "#",
+        "feature": "اسم الميزة",
+        "create": "إنشاء",
+        "read": "قراءة",
+        "edit": "تعديل",
+        "delete": "حذف",
+        "control": "تحكم",
+        "assignee": "تعيين (إضافة مبنى / ربط جهاز)",
+        "restore": "استعادة",
+        "read_required_warning": "⚠️ يجب تحديد خيار \"قراءة\" إذا تم تحديد أي إجراء آخر."
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "submit": "إرسال"
+      }
+    },
+    "table": {
+      "index": "#",
+      "name": "الاسم",
+      "created": "تاريخ الإنشاء",
+      "updated": "تاريخ التحديث",
+      "actions": "الإجراءات",
+      "edit": "تعديل",
+      "delete": "حذف"
+    }
+  },
+  "threshold": {
+    "header": {
+      "title": "مدير عتبة إنترنت الأشياء الذكي",
+      "description": "راقب وتحكم في عتبات أجهزة إنترنت الأشياء بكفاءة باستخدام التنبيهات الفورية والأتمتة.",
+      "createBtn": "إنشاء عتبة جديدة"
+    },
+    "card": {
+      "delete": "حذف العتبة",
+      "createdBy": "تم الإنشاء بواسطة",
+      "explore": "استكشاف"
+    },
+    "table": {
+      "index": "#",
+      "name": "اسم التصنيف",
+      "createdBy": "تم الإنشاء بواسطة",
+      "view": "عرض",
+      "delete": "حذف"
+    },
+    "form": {
+      "title": "إنشاء حد",
+      "label": "اسم الحد",
+      "co2": "ثاني أكسيد الكربون",
+      "energy": "استهلاك الطاقة",
+      "occupancy": "الإشغال",
+      "smokeTemp": "درجة حرارة الدخان",
+      "temperature": "درجة الحرارة",
+      "water": "استهلاك المياه",
+      "humidity": "الرطوبة",
+      "back": "رجوع",
+      "submit": "إرسال",
+      "placeholder": {
+        "label": "الاسم",
+        "co2": "ثاني أكسيد الكربون (ppm)",
+        "energy": "الطاقة (ك.و.س/يوم)",
+        "occupancy": "الإشغال (%)",
+        "smokeTemp": "درجة حرارة الدخان (°م)",
+        "temperature": "درجة الحرارة (°م)",
+        "water": "المياه (لتر/يوم)",
+        "humidity": "الرطوبة (%)"
+      }
+    },
+    "details": {
+      "threshold_details": "تفاصيل العتبة",
+      "created_by": "أنشئ بواسطة",
+      "label": "الملصق",
+      "co2": "ثاني أكسيد الكربون",
+      "humidity": "الرطوبة",
+      "energy_consumption": "استهلاك الطاقة",
+      "occupancy": "الإشغال",
+      "smoke_temp": "درجة حرارة الدخان",
+      "temperature": "درجة الحرارة",
+      "water_consumption": "استهلاك المياه",
+      "back": "رجوع",
+      "submit": "إرسال",
+      "create_threshold": "إنشاء عتبة"
+    }
+  },
+  "scheduler": {
+    "header": {
+      "title": "جدولة الأجهزة الذكية",
+      "descp": "قم بأتمتة وإدارة أجهزة إنترنت الأشياء الخاصة بك بكفاءة باستخدام نظام جدولة قوي.",
+      "btnText": "إنشاء جدول جديد"
+    },
+    "card": {
+      "delete": "حذف الجدولة",
+      "nextTaskPrefix": "المهمة التالية:",
+      "unreachable": "الجهاز غير متصل",
+      "scheduled": "تمت جدولته",
+      "explore": "استكشاف"
+    },
+    "table": {
+      "index": "#",
+      "deviceName": "اسم الجهاز",
+      "summary": "الملخص",
+      "nextTaskPrefix": "المهمة التالية:",
+      "unreachable": "الجهاز غير متصل",
+      "scheduled": "تمت جدولته"
+    },
+    "form": {
+      "title": {
+        "create": "إنشاء جدول",
+        "update": "تحديث جدول"
+      },
+      "scheduleTime": "وقت الجدولة",
+      "taskDescription": "وصف المهمة",
+      "taskDescriptionPlaceholder": "أدخل وصف المهمة",
+      "selectDevice": "اختر الجهاز",
+      "selectDevicePlaceholder": "اختر الجهاز",
+      "frequency": "التكرار",
+      "actionState": "حالة الإجراء",
+      "cancel": "إلغاء",
+      "submit": "إرسال",
+      "frequencyOptions": {
+        "once": {
+          "label": "مرة واحدة",
+          "description": "تشغيل المهمة مرة واحدة"
+        },
+        "daily": {
+          "label": "يوميًا",
+          "description": "تشغيل المهمة كل يوم"
+        },
+        "weekly": {
+          "label": "أسبوعيًا",
+          "description": "تشغيل المهمة كل أسبوع"
+        }
+      },
+      "actionStates": {
+        "on": {
+          "label": "تشغيل",
+          "description": "تشغيل الجهاز"
+        },
+        "off": {
+          "label": "إيقاف",
+          "description": "إيقاف الجهاز"
+        }
+      }
+    },
+    "details": {
+      "schedulerDetails": "تفاصيل المجدول",
+      "taskId": "معرف المهمة",
+      "scheduledTime": "وقت الجدولة",
+      "status": "الحالة",
+      "taskType": "نوع المهمة",
+      "taskDescription": "وصف المهمة",
+      "deviceName": "اسم الجهاز",
+      "deviceLocation": "موقع الجهاز",
+      "building": "المبنى",
+      "floor": "الطابق",
+      "room": "الغرفة",
+      "action": "الإجراء",
+      "frequency": "التكرار",
+      "createdBy": "تم الإنشاء بواسطة"
+    },
+    "filterbar": {
+      "all": "الكل",
+      "once": "مرة واحدة",
+      "daily": "يوميًا",
+      "weekly": "أسبوعيًا"
+    }
+  },
+  "filterbar": {
+    "placeholder": "ابحث بالاسم",
+    "clearIconAlt": "مسح البحث",
+    "searchIconAlt": "بحث"
+  },
+  "device": {
+    "header": {
+      "title": "إدارة الأجهزة بسهولة",
+      "description": "تنقل ونظم أجهزتك بسهولة.",
+      "createButton": "إنشاء جهاز جديد",
+      "associateButton": "ربط الأجهزة"
+    },
+    "filterbar": {
+      "selectFloor": "اختر الطابق",
+      "selectRoom": "اختر الغرفة"
+    },
+    "card": {
+      "edit": "تعديل الجهاز",
+      "delete": "حذف الجهاز",
+      "favorite": "أضف إلى المفضلة",
+      "favorite_Remove": "إزالة من المفضلة",
+      "status": "الحالة",
+      "installedLocation": "موقع التركيب",
+      "explore": "استكشاف"
+    },
+    "table": {
+      "index": "#",
+      "name": "الاسم",
+      "connectivityStatus": "حالة الاتصال"
+    },
+    "stat_card": {
+      "title": "إحصائيات الجهاز",
+      "powerConsumption": "استهلاك الطاقة",
+      "co2Level": "مستوى ثاني أكسيد الكربون",
+      "temperatureHumidity": "درجة الحرارة والرطوبة",
+      "occupancy": "الإشغال",
+      "energyConsumptionCost": "تكلفة استهلاك الطاقة"
+    },
+    "detail": {
+      "title": "معلومات الجهاز",
+      "action": "الإجراء",
+      "deviceDetails": "تفاصيل الجهاز",
+      "deviceName": "اسم الجهاز",
+      "deviceType": "نوع الجهاز",
+      "vendor": "المورّد",
+      "deviceStatus": "حالة الجهاز",
+      "deviceNumber": "رقم الجهاز",
+      "deviceThreshold": "عتبة الجهاز",
+      "roomDetails": "تفاصيل الغرفة",
+      "roomName": "اسم الغرفة",
+      "roomType": "نوع الغرفة",
+      "buildingDetails": "تفاصيل المبنى",
+      "buildingName": "اسم المبنى",
+      "buildingAddress": "العنوان",
+      "buildingType": "نوع المبنى",
+      "floorDetails": "تفاصيل الطابق",
+      "floorName": "اسم الطابق",
+      "floorLocation": "موقع الطابق",
+      "floorType": "نوع الطابق"
+    },
+    "associate_form": {
+      "associateDevice": {
+        "title": "ربط جهاز",
+        "locationType": {
+          "label": "اختر نوع الربط",
+          "placeholder": "اختر نوع الربط"
+        },
+        "selectLocation": {
+          "Room": {
+            "label": "اختر الغرفة",
+            "placeholder": "اختر الغرفة"
+          },
+          "Floor": {
+            "label": "اختر الطابق",
+            "placeholder": "اختر الطابق"
+          }
+        },
+        "selectDevice": {
+          "label": "اختر جهاز",
+          "placeholder": "اختر جهاز"
+        },
+        "buttons": {
+          "cancel": "إلغاء",
+          "submit": "إرسال"
+        }
+      }
+    },
+    "form": {
+      "title": {
+        "create": "إنشاء جهاز",
+        "update": "تحديث الجهاز"
+      },
+      "name": {
+        "label": "اسم الجهاز",
+        "placeholder": "اختر اسمًا لجهازك"
+      },
+      "vendor": {
+        "label": "مُورِّد الجهاز",
+        "placeholder": "اختر مُورِّدًا لجهازك"
+      },
+      "number": {
+        "label": "رقم الجهاز",
+        "placeholder": "أدخل رقمًا لجهازك"
+      },
+      "type": {
+        "label": "نوع الجهاز",
+        "temperature_humidity": {
+          "title": "مستشعر درجة الحرارة والرطوبة",
+          "description": "يراقب درجة حرارة الغرفة والرطوبة في الوقت الحقيقي"
+        },
+        "co2": {
+          "title": "مستشعر جودة الهواء",
+          "description": "يراقب مستويات ثاني أكسيد الكربون، ودرجة الحرارة، والرطوبة لضمان جودة الهواء والسلامة"
+        },
+        "occupancy": {
+          "title": "مستشعر الإشغال",
+          "description": "يكتشف إشغال الغرفة والحركة"
+        },
+        "water_leakage": {
+          "title": "كاشف تسرب المياه",
+          "description": "يكتشف تسربات المياه لمنع الضرر"
+        },
+        "energy_meter": {
+          "title": "عداد الطاقة",
+          "description": "يقيس استهلاك الطاقة في الوقت الحقيقي"
+        },
+        "camera": {
+          "title": "كاميرا مراقبة",
+          "description": "يراقب الأمن من خلال المراقبة بالفيديو"
+        },
+        "bulb": {
+          "title": "مصباح ذكي",
+          "description": "نظام إضاءة ذكي بتحكم عن بعد"
+        },
+        "water": {
+          "title": "مستشعر استهلاك المياه",
+          "description": "يتتبع استهلاك المياه في الوقت الفعلي لتعزيز الحفاظ عليها واكتشاف التسريبات"
+        },
+        "socket": {
+          "title": "مقبس ذكي",
+          "description": "مقبس كهربائي يتم التحكم فيه عن بُعد للأجهزة"
+        },
+        "smoke_detector": {
+          "title": "كاشف الدخان",
+          "description": "يكتشف الدخان ويطلق التنبيهات لسلامة الحريق"
+        }
+      },
+      "threshold": {
+        "label": "عتبة الجهاز",
+        "placeholder": "اختر عتبة لجهازك",
+        "temperature": {
+          "label": "حد درجة الحرارة",
+          "placeholder": "أدخل الحد الأقصى لدرجة الحرارة"
+        },
+        "humidity": {
+          "label": "حد الرطوبة",
+          "placeholder": "أدخل الحد الأقصى للرطوبة"
+        },
+        "co2Level": {
+          "label": "حد مستوى ثاني أكسيد الكربون",
+          "placeholder": "أدخل حد مستوى ثاني أكسيد الكربون (ppm)"
+        }
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "submit": "تأكيد"
+      }
+    }
+  },
+  "room": {
+    "header": {
+      "title": "إدارة الغرف بسهولة",
+      "description": "تنقل ونظم غرفك بكل سهولة.",
+      "button": "إنشاء غرفة جديدة"
+    },
+    "filterbar": {
+      "selectFloor": "اختر الطابق"
+    },
+    "card": {
+      "edit": "تعديل الغرفة",
+      "delete": "حذف الغرفة",
+      "description": "الغرف تقع في {{floor}}، نوعها هو {{type}}، و{{count}} من الأجهزة مدمجة.",
+      "explore": "استكشاف"
+    },
+    "table": {
+      "index": "#",
+      "name": "اسم الغرفة",
+      "overview": "نظرة عامة",
+      "view": "عرض",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "description": "الغرف تقع في {{floor}}، نوعها هو {{type}}، و{{count}} من الأجهزة مدمجة."
+    },
+    "form": {
+      "label": {
+        "name": "اسم الغرفة",
+        "floor": "اختر الطابق",
+        "type": "نوع الغرفة"
+      },
+      "types": {
+        "apartment-living-room": {
+          "name": "غرفة المعيشة",
+          "description": "منطقة مشتركة للاسترخاء"
+        },
+        "apartment-bedroom": {
+          "name": "غرفة النوم",
+          "description": "مساحة نوم خاصة"
+        },
+        "apartment-kitchen": {
+          "name": "المطبخ",
+          "description": "الطهي وتحضير الطعام"
+        },
+        "apartment-bathroom": {
+          "name": "الحمام",
+          "description": "منطقة النظافة الشخصية"
+        },
+        "apartment-store-room": {
+          "name": "غرفة التخزين",
+          "description": "مساحة لتخزين الأغراض المنزلية"
+        },
+        "villa-master-bedroom": {
+          "name": "غرفة النوم الرئيسية",
+          "description": "غرفة نوم خاصة كبيرة"
+        },
+        "villa-dining-room": {
+          "name": "غرفة الطعام",
+          "description": "مساحة لتناول الطعام الرسمية"
+        },
+        "villa-guest-room": {
+          "name": "غرفة الضيوف",
+          "description": "غرفة للضيوف"
+        },
+        "villa-terrace": {
+          "name": "الشرفة",
+          "description": "مساحة خارجية للجلوس"
+        },
+        "penthouse-luxury-suite": {
+          "name": "جناح فاخر",
+          "description": "مساحة معيشة فاخرة"
+        },
+        "penthouse-private-terrace": {
+          "name": "شرفة خاصة",
+          "description": "مساحة خارجية مع إطلالات"
+        },
+        "office-meeting-room": {
+          "name": "غرفة الاجتماعات",
+          "description": "مؤتمرات ومناقشات"
+        },
+        "office-private-office": {
+          "name": "مكتب خاص",
+          "description": "مساحة عمل شخصية"
+        },
+        "office-workstation": {
+          "name": "محطة عمل",
+          "description": "منطقة مكتب عمل مشترك"
+        },
+        "retail-showroom": {
+          "name": "صالة العرض",
+          "description": "منطقة عرض المنتجات"
+        },
+        "retail-cash-counter": {
+          "name": "كاونتر الدفع",
+          "description": "منطقة الفوترة والدفع"
+        },
+        "retail-stock-room": {
+          "name": "غرفة المخزون",
+          "description": "تخزين البضائع"
+        },
+        "coworking-hot-desk": {
+          "name": "مكتب مشترك",
+          "description": "مساحة عمل مشتركة مؤقتة"
+        },
+        "coworking-lounge": {
+          "name": "الاستراحة",
+          "description": "منطقة للاسترخاء والتواصل"
+        },
+        "manufacturing-production-area": {
+          "name": "منطقة الإنتاج",
+          "description": "التصنيع والتجميع"
+        },
+        "manufacturing-quality-control": {
+          "name": "غرفة مراقبة الجودة",
+          "description": "فحص واختبار المنتجات"
+        },
+        "warehouse-storage-unit": {
+          "name": "وحدة التخزين",
+          "description": "مساحة لتخزين البضائع"
+        },
+        "warehouse-packing-area": {
+          "name": "منطقة التعبئة",
+          "description": "التغليف والإرسال"
+        },
+        "logistics-loading-dock": {
+          "name": "رصيف التحميل",
+          "description": "منطقة التحميل والتفريغ"
+        },
+        "logistics-sorting-area": {
+          "name": "منطقة الفرز",
+          "description": "فرز وتنظيم الطرود"
+        },
+        "hospital-patient-room": {
+          "name": "غرفة المرضى",
+          "description": "مساحة للمرضى المقيمين"
+        },
+        "hospital-operating-room": {
+          "name": "غرفة العمليات",
+          "description": "منطقة إجراء العمليات الجراحية"
+        },
+        "hospital-pharmacy": {
+          "name": "الصيدلية",
+          "description": "تخزين الأدوية والمستلزمات"
+        },
+        "educational-classroom": {
+          "name": "الفصل الدراسي",
+          "description": "مساحة للمحاضرات"
+        },
+        "educational-library": {
+          "name": "المكتبة",
+          "description": "منطقة الكتب والدراسة"
+        },
+        "educational-lab": {
+          "name": "المختبر",
+          "description": "منطقة البحث والدراسة العلمية"
+        },
+        "government-service-counter": {
+          "name": "كاونتر الخدمة",
+          "description": "مكتب مساعدة الجمهور"
+        },
+        "commercial-living-space": {
+          "name": "مساحة المعيشة",
+          "description": "منطقة سكنية"
+        },
+        "commercial-shop-area": {
+          "name": "منطقة المتجر",
+          "description": "مساحة للبيع أو العمل"
+        },
+        "office-retail-workspace": {
+          "name": "مساحة العمل",
+          "description": "بيئة مكتبية"
+        }
+      },
+      "placeholder": {
+        "name": "اختر اسمًا لغرفتك",
+        "floor": "اختر الطابق"
+      },
+      "button": {
+        "cancel": "إلغاء",
+        "submit": "إرسال"
+      }
+    },
+    "stat_card": {
+      "title": "إحصائيات الغرفة",
+      "power_consumption": "استهلاك الطاقة",
+      "energy_consumption_cast": "توزيع استهلاك الطاقة",
+      "temperature_humidity": "درجة الحرارة والرطوبة",
+      "occupancy": "الإشغال",
+      "co2_level": "مستوى ثاني أكسيد الكربون"
+    },
+    "detail": {
+      "section_title": "معلومات الغرفة",
+      "room_details": "تفاصيل الغرفة",
+      "threshold_details": "تفاصيل الحد",
+      "room_name": "اسم الغرفة",
+      "room_type": "نوع الغرفة",
+      "device_integrated": "الأجهزة المتكاملة",
+      "floor_name": "اسم الطابق",
+      "floor_type": "نوع الطابق",
+      "temperature": "درجة الحرارة",
+      "co2_level": "مستوى ثاني أكسيد الكربون",
+      "energy_consumption": "استهلاك الطاقة",
+      "water_consumption": "استهلاك المياه",
+      "occupancy": "الإشغال",
+       "humidity": "الرطوبة",
+      "smoke_temperature": "درجة حرارة الدخان",
+      "header": {
+        "title": "رؤى تفصيلية للغرفة وتخصيص الأجهزة",
+        "description": "احصل على رؤى حول استخدام الغرفة وقم بإدارة الأجهزة بسهولة."
+      }
+    }
+  },
+  "floor": {
+    "header": {
+      "title": "إدارة الطوابق بسهولة",
+      "description": "تنقل ونظم طوابقك بسهولة.",
+      "btnText": "إنشاء طابق جديد"
+    },
+    "filterbar": {
+      "changeBuilding": "تغيير المبنى"
+    },
+    "card": {
+      "edit": "تعديل الطابق",
+      "delete": "حذف الطابق",
+      "explore": "استكشاف",
+      "description": "هذا الطابق {{location}}، يحتوي على {{rooms}} غرفة و {{devices}} جهاز مدمج."
+    },
+    "table": {
+      "number": "#",
+      "name": "اسم الطابق",
+      "location": "موقع الطابق",
+      "threshold": "حد الطابق"
+    },
+    "form": {
+      "nameLabel": "اسم الطابق",
+      "namePlaceholder": "اختر اسمًا للطابق",
+      "locationLabel": "موقع الطابق",
+      "locationPlaceholder": "اختر موقعًا للطابق",
+      "typeLabel": "نوع الطابق",
+      "nextButton": "التالي",
+      "cancelButton": "إلغاء",
+      "thresholdSection": {
+        "title": "الحد الأدنى",
+        "customThresholdLabel": "حدد قيمة حد مخصص",
+        "labelThresholdLabel": "حدد قيمة حد للتسمية",
+        "co2Label": "متوسط ثاني أكسيد الكربون",
+        "co2Placeholder": "متوسط ثاني أكسيد الكربون (جزء في المليون)",
+        "humidityLabel": "متوسط الرطوبة",
+        "humidityPlaceholder": "متوسط الرطوبة (%)",
+        "energyConsumptionLabel": "استهلاك الطاقة",
+        "energyConsumptionPlaceholder": "الطاقة (kWh/يوم)",
+        "occupancyLabel": "الإشغال",
+        "occupancyPlaceholder": "الإشغال (%)",
+        "smokeTemperatureLabel": "درجة حرارة الدخان",
+        "smokeTemperaturePlaceholder": "درجة حرارة الدخان (°C)",
+        "temperatureLabel": "متوسط درجة الحرارة",
+        "temperaturePlaceholder": "متوسط الحرارة (°م)",
+        "waterConsumptionLabel": "استهلاك المياه",
+        "waterConsumptionPlaceholder": "المياه (لتر/يوم)",
+        "selectThresholdLabel": "اختر الحد",
+        "selectThresholdPlaceholder": "اختر العتبة",
+        "backButton": "رجوع",
+        "submitButton": "إرسال"
+      },
+      "types": {
+        "apartment-floor": {
+          "name": "طابق الشقة",
+          "description": "وحدات متعددة في طابق واحد"
+        },
+        "villa-floor": {
+          "name": "طابق الفيلا",
+          "description": "تصميم منزل مكون من عائلة واحدة"
+        },
+        "penthouse-floor": {
+          "name": "طابق البنتهاوس",
+          "description": "الطابق العلوي الفاخر"
+        },
+        "office-floor": {
+          "name": "طابق المكتب",
+          "description": "مكان عمل مؤسسي"
+        },
+        "retail-floor": {
+          "name": "طابق البيع بالتجزئة",
+          "description": "محلات تجارية ومولات"
+        },
+        "co-working-space-floor": {
+          "name": "طابق مساحة العمل المشتركة",
+          "description": "بيئة مكتب مشتركة"
+        },
+        "manufacturing-floor": {
+          "name": "طابق التصنيع",
+          "description": "منطقة الإنتاج والتجميع"
+        },
+        "warehouse-storage-floor": {
+          "name": "طابق التخزين في المستودع",
+          "description": "إدارة التخزين والمخزون"
+        },
+        "logistics-distribution-floor": {
+          "name": "طابق اللوجستيات والتوزيع",
+          "description": "النقل وسلسلة التوريد"
+        },
+        "hospital-floor": {
+          "name": "طابق المستشفى",
+          "description": "الغرف الطبية ووحدات العناية المركزة"
+        },
+        "educational-floor": {
+          "name": "طابق تعليمي",
+          "description": "الفصول الدراسية والمدرجات"
+        },
+        "government-office-floor": {
+          "name": "طابق مكتب حكومي",
+          "description": "مكاتب الإدارة العامة"
+        },
+        "commercial-residential-floor": {
+          "name": "طابق تجاري / سكني",
+          "description": "مساحات أعمال وسكنية مختلطة"
+        },
+        "office-retail-floor": {
+          "name": "طابق مكتب / تجزئة",
+          "description": "أماكن العمل التي تم دمجها مع المتاجر بالتجزئة"
+        },
+        "hotel-apartment-floor": {
+          "name": "طابق فندق / شقة",
+          "description": "الإقامات المؤقتة والدائمة"
+        }
+      }
+    },
+    "detail": {
+      "header": "معلومات الطابق",
+      "floorDetailsTitle": "تفاصيل الطابق",
+      "floorName": "اسم الطابق",
+      "floorLocation": "موقع الطابق",
+      "floorType": "نوع الطابق",
+      "deviceIntegrated": "الأجهزة المتكاملة",
+      "totalRooms": "إجمالي الغرف",
+      "thresholdDetailsTitle": "تفاصيل العتبة",
+      "temperature": "متوسط درجة الحرارة",
+      "humidity": "متوسط الرطوبة",
+      "co2Level": "متوسط مستوى ثاني أكسيد الكربون",
+      "energyConsumption": "استهلاك الطاقة",
+      "waterConsumption": "استهلاك المياه",
+      "occupancy": "الإشغال",
+      "smokeTemperature": "درجة حرارة الدخان",
+      "header_bar": {
+        "title": "رؤى تفصيلية حول الطوابق وتوزيع الغرف",
+        "desp": "احصل على رؤى حول استخدام الطابق وقم بإدارة الغرف والمساحات بسهولة."
+      }
+    },
+    "stat_card": {
+      "title": "إحصائيات الطابق",
+      "power_consumption": "استهلاك الطاقة",
+      "energy_consumption_cast": "رسم استهلاك الطاقة",
+      "temperature_humidity": "درجة الحرارة والرطوبة",
+      "occupancy": "الإشغال",
+      "co2_level": "مستوى ثاني أكسيد الكربون"
+    },
+    "tabs": {
+      "by_room": "حسب الغرفة",
+      "by_devices": "حسب الأجهزة"
+    }
+  },
+  "viewToggle": {
+    "grid": "شبكة",
+    "list": "قائمة"
+  },
+  "chart": {
+    "cold": "بارد",
+    "comfortable": "مريح",
+    "hot": "حار",
+    "low": "منخفض",
+    "normal": "طبيعي",
+    "high": "مرتفع",
+    "time_last_24_hours": "الوقت (آخر 24 ساعة)",
+    "energy_consumption": "استهلاك الطاقة",
+    "estimated_cost": "التكلفة التقديرية",
+    "energy_cost_axis": "استهلاك الطاقة (كيلو واط/ساعة) والتكلفة (دولار أمريكي)",
+    "filterbar": {
+      "Yesterday": "أمس",
+      "Last Week": "الأسبوع الماضي",
+      "Last Month": "الشهر الماضي"
+    },
+    "temperatureHumidity": {
+      "xAxisTitle": "النطاق الزمني",
+      "yAxisTemperature": "درجة الحرارة (°م)",
+      "yAxisHumidity": "الرطوبة (%)",
+      "series": {
+        "temperature": "درجة الحرارة",
+        "humidity": "الرطوبة"
+      },
+      "tooltip": {
+        "temperature": "{name}: [b]{valueY}°م[/]",
+        "humidity": "{name}: [b]{valueY}%[/]"
+      }
+    },
+    "occupancyChart": {
+      "xAxisTitle": "التاريخ",
+      "yAxisTotalPeople": "إجمالي الأشخاص",
+      "series": {
+        "total": "إجمالي الأشخاص"
+      },
+      "tooltip": {
+        "total": "{name}: [b]{valueY}[/]"
+      }
+    },
+    "energyConsumptionChart": {
+      "xAxisTitle": "النطاق الزمني",
+      "yAxisTitle": "استهلاك الطاقة (ك.و.س)",
+      "series": {
+        "importEnergy": "استهلاك الطاقة"
+      },
+      "tooltip": {
+        "importEnergy": "{name}: [b]{valueY} ك.و.س[/]"
+      }
+    },
+    "co2Chart": {
+      "xAxisTitle": "النطاق الزمني",
+      "yAxisTitle": "مستوى ثاني أكسيد الكربون (جزء في المليون)",
+      "series": {
+        "co2": "ثاني أكسيد الكربون"
+      },
+      "tooltip": {
+        "co2": "{name}:\\n[bold]{valueY}[/] جزء في المليون"
+      }
+    }
+  },
+  "room_types": {
+    "Living Room": "غرفة المعيشة",
+    "Bedroom": "غرفة النوم",
+    "Kitchen": "المطبخ",
+    "Bathroom": "الحمام",
+    "Store Room": "غرفة التخزين",
+    "Master Bedroom": "غرفة النوم الرئيسية",
+    "Dining Room": "غرفة الطعام",
+    "Guest Room": "غرفة الضيوف",
+    "Terrace": "الشرفة",
+    "Luxury Suite": "جناح فاخر",
+    "Private Terrace": "شرفة خاصة",
+    "Meeting Room": "غرفة الاجتماعات",
+    "Private Office": "مكتب خاص",
+    "Workstation": "محطة عمل",
+    "Showroom": "صالة العرض",
+    "Cash Counter": "كاونتر الدفع",
+    "Stock Room": "غرفة البضائع",
+    "Hot Desk": "مكتب مشترك مؤقت",
+    "Lounge": "الردهة",
+    "Production Area": "منطقة الإنتاج",
+    "Quality Control Room": "غرفة مراقبة الجودة",
+    "Storage Unit": "وحدة التخزين",
+    "Packing Area": "منطقة التعبئة",
+    "Loading Dock": "منطقة التحميل",
+    "Sorting Area": "منطقة الفرز",
+    "Patient Room": "غرفة المرضى",
+    "Operating Room": "غرفة العمليات",
+    "Pharmacy": "الصيدلية",
+    "Classroom": "قاعة الدراسة",
+    "Library": "المكتبة",
+    "Lab": "المعمل",
+    "Service Counter": "مكتب الخدمة",
+    "Living Space": "مساحة المعيشة",
+    "Shop Area": "منطقة المتجر",
+    "Workspace": "مساحة العمل",
+    "Retail Store": "المتجر",
+    "Hotel Room": "غرفة فندق",
+    "Lobby": "اللوبي"
+  },
+  "toast": {
+    "login": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم تسجيل الدخول بنجاح!"
+        },
+        "202": {
+          "title": "نجاح",
+          "text": "تم تسجيل الخروج بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "يرجى تعبئة جميع الحقول المطلوبة."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "اسم المستخدم أو كلمة المرور غير صحيحة."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "تم تقييد حسابك. الرجاء التواصل مع الدعم."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "حساب المستخدم غير موجود."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقاً."
+        }
+      }
+    },
+    "auth": {
+      "200": {
+        "title": "نجاح",
+        "text": "تم تنفيذ الطلب بنجاح!"
+      },
+      "209": {
+        "title": "نجاح",
+        "text": "تم إرسال رابط إعادة تعيين كلمة المرور! تحقق من بريدك الإلكتروني للمتابعة."
+      },
+      "400": {
+        "title": "طلب غير صالح",
+        "text": "يرجى تعبئة جميع الحقول المطلوبة."
+      },
+      "401": {
+        "title": "غير مصرح",
+        "text": "اسم المستخدم أو كلمة المرور غير صحيحة."
+      },
+      "410": {
+        "title": "انتهت الصلاحية",
+        "text": "انتهت صلاحية الجلسة. يرجى الطلب مرة أخرى."
+      },
+      "403": {
+        "title": "ممنوع",
+        "text": "تم تقييد حسابك. الرجاء التواصل مع الدعم."
+      },
+      "404": {
+        "title": "غير موجود",
+        "text": "حساب المستخدم غير موجود."
+      },
+      "500": {
+        "title": "خطأ في الخادم",
+        "text": "حدث خطأ ما. يرجى المحاولة لاحقاً."
+      }
+    },
+    "building": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب بيانات المبنى بنجاح!"
+        },
+        "206": {
+          "title": "نجاح",
+          "text": "تم إلغاء تعيين المستخدم بنجاح!"
+        },
+        "201": {
+          "title": "تم الإنشاء",
+          "text": "تم إنشاء المبنى بنجاح!"
+        },
+        "204": {
+          "title": "تم التحديث",
+          "text": "تم تحديث المبنى بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات غير صالحة للمبنى."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "ليست لديك صلاحية للوصول إلى هذا المبنى."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذا المبنى مقيد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "المبنى غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "يوجد مبنى بهذا الاسم بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "floor": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب بيانات الطابق بنجاح!"
+        },
+        "201": {
+          "title": "تم الإنشاء",
+          "text": "تم إنشاء الطابق بنجاح!"
+        },
+        "202": {
+          "title": "تم الحذف",
+          "text": "تم حذف الطابق بنجاح!"
+        },
+        "204": {
+          "title": "تم التحديث",
+          "text": "تم تحديث الطابق بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات طابق غير صالحة."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "ليست لديك صلاحية للوصول إلى هذا الطابق."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذا الطابق مقيد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "الطابق غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "يوجد طابق بهذا الاسم بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "room": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب بيانات الغرفة بنجاح!"
+        },
+        "201": {
+          "title": "تم الإنشاء",
+          "text": "تم إنشاء الغرفة بنجاح!"
+        },
+        "202": {
+          "title": "تم الحذف",
+          "text": "تم حذف الغرفة بنجاح!"
+        },
+        "204": {
+          "title": "تم التحديث",
+          "text": "تم تحديث الغرفة بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات غرفة غير صالحة."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "ليست لديك صلاحية للوصول إلى هذه الغرفة."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذه الغرفة مقيد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "الغرفة غير موجودة."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "يوجد غرفة بهذا الاسم بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "device": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب بيانات الجهاز بنجاح!"
+        },
+        "201": {
+          "title": "تم الإنشاء",
+          "text": "تم إنشاء الجهاز بنجاح!"
+        },
+        "202": {
+          "title": "تم الحذف",
+          "text": "تم حذف الجهاز بنجاح!"
+        },
+        "204": {
+          "title": "تم التحديث",
+          "text": "تم تحديث الجهاز بنجاح!"
+        },
+        "210": {
+          "title": "تم الربط بنجاح",
+          "text": "تم ربط الجهاز بنجاح."
+        },
+        "211": {
+          "title": "تم الفك بنجاح",
+          "text": "تم فك ارتباط الجهاز بنجاح."
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات جهاز غير صالحة."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "ليست لديك صلاحية للوصول إلى هذا الجهاز."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذا الجهاز مقيد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "الجهاز غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "يوجد جهاز بهذا المعرف بالفعل."
+        },
+        "422": {
+          "title": "فشل في الربط",
+          "text": "فشل ربط الجهاز بسبب بيانات غير صالحة."
+        },
+        "423": {
+          "title": "مرتبط مسبقًا",
+          "text": "الجهاز مرتبط بالفعل بجهة أخرى."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "threshold": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب بيانات الحد بنجاح!"
+        },
+        "201": {
+          "title": "تم الإنشاء",
+          "text": "تم إنشاء الحد بنجاح!"
+        },
+        "202": {
+          "title": "تم الحذف",
+          "text": "تم حذف الحد بنجاح!"
+        },
+        "204": {
+          "title": "تم التحديث",
+          "text": "تم تحديث الحد بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات حد غير صالحة."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "ليست لديك صلاحية للوصول إلى هذا الحد."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذا الحد مقيد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "الحد غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "يوجد حد بهذه القيمة بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "scheduler": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم الجدولة بنجاح!"
+        },
+        "201": {
+          "title": "تم الإنشاء",
+          "text": "تم إنشاء الجدولة بنجاح!"
+        },
+        "202": {
+          "title": "تم الحذف",
+          "text": "تم حذف الجدولة بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "طلب جدولة غير صالح."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "ليست لديك صلاحية للجدولة."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذه الجدولة مقيد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "لم يتم العثور على هذا للجدولة."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "تمت الجدولة لهذا الوقت بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "role": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب الدور بنجاح!"
+        },
+        "201": {
+          "title": "نجاح",
+          "text": "تم إنشاء الدور بنجاح!"
+        },
+        "202": {
+          "title": "نجاح",
+          "text": "تم تحديث الدور بنجاح!"
+        },
+        "204": {
+          "title": "نجاح",
+          "text": "تم حذف الدور بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات غير صالحة للدور."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "أنت غير مصرح لك بإدارة الأدوار."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "لا توجد صلاحيات كافية لتعديل الأدوار."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "الدور المطلوب غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "اسم الدور موجود بالفعل."
+        },
+        "410": {
+          "title": "تعارض",
+          "text": "يرجى استخدام كلمة مفتاحية أخرى."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. حاول مرة أخرى لاحقًا."
+        }
+      }
+    },
+    "permission": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب الأذونات بنجاح!"
+        },
+        "201": {
+          "title": "نجاح",
+          "text": "تم إنشاء الأذونات بنجاح!"
+        },
+        "202": {
+          "title": "نجاح",
+          "text": "تم تحديث الأذونات بنجاح!"
+        },
+        "204": {
+          "title": "نجاح",
+          "text": "تم حذف الأذونات بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات غير صالحة للأذونات."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "أنت غير مصرح لك بإدارة الأذونات."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "لا توجد صلاحيات كافية لتعديل هذا الإعداد."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "الأذن المطلوب غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "إذن بهذا الاسم موجود بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. حاول مرة أخرى لاحقًا."
+        }
+      }
+    },
+    "user": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب المستخدم بنجاح!"
+        },
+        "201": {
+          "title": "نجاح",
+          "text": "تم إنشاء المستخدم بنجاح!"
+        },
+        "202": {
+          "title": "نجاح",
+          "text": "تم تحديث المستخدم بنجاح!"
+        },
+        "203": {
+          "title": "نجاح",
+          "text": "تم تحديث الملف الشخصي بنجاح!"
+        },
+        "204": {
+          "title": "نجاح",
+          "text": "تم تعطيل المستخدم بنجاح!"
+        },
+        "205": {
+          "title": "نجاح",
+          "text": "تم تفعيل المستخدم بنجاح!"
+        },
+        "206": {
+          "title": "نجاح",
+          "text": "تم بناء المخصص بنجاح!"
+        },
+        "400": {
+          "title": "طلب غير صالح",
+          "text": "تم توفير بيانات غير صالحة للمستخدم."
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "أنت غير مصرح لك بإدارة المستخدمين."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "لا توجد صلاحيات كافية لتعديل هذا المستخدم."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "المستخدم المطلوب غير موجود."
+        },
+        "409": {
+          "title": "تعارض",
+          "text": "يوجد مستخدم بهذا البريد الإلكتروني بالفعل."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ ما. حاول مرة أخرى لاحقًا."
+        }
+      }
+    },
+    "notification": {
+      "status": {
+        "200": {
+          "title": "نجاح",
+          "text": "تم جلب الإشعارات بنجاح!"
+        },
+        "206": {
+          "title": "نجاح",
+          "text": "تم جلب الإشعارات جزئيًا بنجاح!"
+        },
+        "401": {
+          "title": "غير مصرح",
+          "text": "أنت غير مصرح لك بالوصول إلى هذه الإشعارات."
+        },
+        "403": {
+          "title": "ممنوع",
+          "text": "الوصول إلى هذه الإشعارات محظور."
+        },
+        "404": {
+          "title": "غير موجود",
+          "text": "لم يتم العثور على إشعارات."
+        },
+        "500": {
+          "title": "خطأ في الخادم",
+          "text": "حدث خطأ أثناء جلب الإشعارات. يرجى المحاولة لاحقًا."
+        }
+      }
+    },
+    "favourite": {
+      "add": {
+        "title": "تمت الإضافة إلى المفضلة",
+        "text": "تمت إضافة الجهاز إلى المفضلة بنجاح."
+      },
+      "remove": {
+        "title": "تمت الإزالة من المفضلة",
+        "text": "تمت إزالة الجهاز من المفضلة."
+      }
+    }
+  },
+  "alerts": {
+    "title": "تنبيه",
+    "energy_meter": "تم تجاوز حد استهلاك الطاقة بواسطة {{device}} في {{location}}. القيمة الحالية: {{value}} كيلوواط ساعة.",
+    "temperature": "تم تجاوز حد درجة الحرارة بواسطة {{device}} في {{location}}. القيمة الحالية: {{value}} درجة مئوية.",
+    "humidity": "تم تجاوز حد الرطوبة بواسطة {{device}} في {{location}}. القيمة الحالية: {{value}}٪.",
+    "co2": "تم تجاوز حد تركيز ثاني أكسيد الكربون الداخلي بواسطة {{device}} في {{location}}. القيمة الحالية: {{value}} جزء في المليون.",
+    "water_leakage": "تم اكتشاف تسرب للمياه بواسطة {{device}} في {{location}}.",
+    "smoke_detector": "تم اكتشاف دخان بواسطة {{device}} في {{location}}.",
+    "detail": {
+      "back": "رجوع",
+      "notificationDetail": "تفاصيل الإشعار",
+      "time": "الوقت",
+      "attribute": "السمة",
+      "details": "التفاصيل",
+      "deviceName": "اسم الجهاز",
+      "deviceId": "معرّف الجهاز",
+      "location": "الموقع",
+      "am": "ص",
+      "pm": "م"
+    }
+  },
+  "time": {
+    "seconds_ago": "منذ {{value}} ثانية",
+    "minutes_ago": "منذ {{value}} دقيقة",
+    "hour": "{{value}} ساعة",
+    "hours": "{{value}} ساعة",
+    "minute": "{{value}} دقيقة",
+    "minutes": "{{value}} دقيقة",
+    "day": "{{value}} يوم",
+    "days": "{{value}} يوم",
+    "month": "{{value}} شهر",
+    "months": "{{value}} شهر",
+    "year": "{{value}} سنة",
+    "years": "{{value}} سنة",
+    "ago": ""
+  },
+  "profile_setting": {
+    "title": "إعدادات الملف الشخصي",
+    "upload_image": "تحميل صورة",
+    "upload_note": "يدعم فقط PNG و JPEG أقل من 5MB.",
+    "user_name": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "discard": "إلغاء",
+    "update": "تحديث",
+    "change_password": "تغيير كلمة المرور",
+    "current_password": "كلمة المرور الحالية",
+    "new_password": "كلمة المرور الجديدة",
+    "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+    "current_password_required": "كلمة المرور الحالية مطلوبة.",
+    "new_password_required": "كلمة المرور الجديدة مطلوبة.",
+    "confirm_password_required": "تأكيد كلمة المرور مطلوب.",
+    "password_required": "كلمة المرور مطلوبة.",
+    "min_length_6": "يجب أن تكون 6 أحرف على الأقل.",
+    "min_length_8": "يجب أن تكون 8 أحرف على الأقل.",
+    "enter_current_password": "أدخل كلمة المرور الحالية",
+    "enter_new_password": "أدخل كلمة مرور جديدة",
+    "enter_confirm_new_password": "تأكيد كلمة المرور الجديدة",
+    "password_mismatch": "كلمتا المرور غير متطابقتين.",
+    "cancel": "إلغاء"
+  },
+  "action_button": {
+    "ON": "تشغيل",
+    "OFF": "إيقاف"
+  },
+  "device_status": {
+    "ONLINE": "متصل",
+    "OFFLINE": "غير متصل"
+  },
+  "airQualityInfo": {
+    "text_building": "تمثل هذه القيمة المتوسط اليومي استنادًا إلى جميع المستشعرات في هذا المبنى. تساعدك على مراقبة جودة الهواء العامة دون الحاجة إلى فحص كل غرفة.",
+    "text_floor": "تمثل هذه القيمة المتوسط اليومي استنادًا إلى جميع المستشعرات في هذا الطابق. تساعدك على مراقبة جودة الهواء العامة دون الحاجة إلى فحص كل غرفة."
+  },
+  "occupancyInfo": {
+    "text_building": "هذه القيمة هي المتوسط اليومي بناءً على جميع المستشعرات في هذا المبنى. تساعدك على مراقبة الإشغال العام دون الحاجة إلى التحقق من كل مساحة.",
+    "text_floor": "هذه القيمة هي المتوسط اليومي بناءً على جميع المستشعرات في هذا الطابق. تساعدك على مراقبة الإشغال العام دون الحاجة إلى التحقق من كل مساحة."
+  },
+  "error_placeholder": {
+    "title": "الخادم غير متاح",
+    "message": "نواجه مشكلة في الاتصال بخوادمنا في الوقت الحالي. قد تكون هذه مشكلة مؤقتة في خدمتنا.",
+    "instruction": "إذا استمرت المشكلة، يرجى التحقق من اتصالك بالإنترنت أو المحاولة مرة أخرى لاحقًا.",
+    "try_again": "حاول مرة أخرى",
+    "unable_to_load": "غير قادر على التحميل",
+    "back_to_home": "العودة إلى الصفحة الرئيسية"
+  },
+  "file_image": {
+    "invalidType": "نوع الملف غير صالح! يسمح فقط بـ PNG و JPEG.",
+    "sizeExceeded": "يتجاوز حجم الملف الحد الأقصى 5 ميجابايت!"
+  },
+  "validation": {
+    "emailFormat": "أدخل عنوان بريد إلكتروني صالح.",
+    "emailMaxLength": "يجب ألا يتجاوز البريد الإلكتروني 50 حرفًا.",
+    "passwordPattern": "يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل، وحرف صغير واحد على الأقل، ورقم واحد، وحرف خاص واحد على الأقل.",
+    "passwordLength": "يجب أن تتراوح كلمة المرور بين 8 و24 حرفًا.",
+    "usernameFormat": "يجب أن يحتوي اسم المستخدم على أحرف ومسافات فقط، بحد أقصى ٥٠ حرفًا.",
+    "usernameMaxLength": "لا يمكن لاسم المستخدم أن يتجاوز ٥٠ حرفًا."
+  },
+  "favorite": {
+    "header": {
+      "title": "المفضلة الخاصة بي",
+      "description": "يمكنك الوصول السريع والتحكم في أجهزتك الأكثر استخدامًا في مكان واحد. خصص تجربة المبنى الذكي الخاصة بك عن طريق إضافة الأجهزة المفضلة لتسريع التشغيل والمراقبة."
+    }
+  },
+  "Device_Action": {
+    "title": "إجراء الجهاز",
+    "message_on": "تم تشغيل مقبس الحائط بنجاح.",
+    "message_off": "تم إيقاف مقبس الحائط بنجاح."
+  }
+}

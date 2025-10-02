@@ -1,0 +1,45 @@
+<form class="flex-column mt-3 row" [formGroup]="form">
+    <div class="form-group col-md-4 col-10">
+        <label for="building-name" class="mb-2 label">User Name</label>
+        <div class="input-group" [class.disabled]="isUpdate">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <input type="text" formControlName="username" class="form-control" id="roomName"
+                placeholder="Enter user name" required>
+        </div>
+    </div>
+    <div class="col-10 col-md-8 line ms-2 my-3"></div>
+    <div class="form-group col-md-4 col-10">
+        <label for="building-name" class="mb-2 label">Email</label>
+        <div class="input-group" [class.disabled]="isUpdate">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <input type="text" formControlName="email" class="form-control" id="roomName"
+                placeholder="Enter user email" required>
+        </div>
+    </div>
+   
+    <div class="col-10 col-md-8 line ms-2 my-3"></div>
+
+    <div class="form-group col-md-4 col-10">
+        <label for="building-address" class="mb-2 label">Select Role</label>
+        <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user-tag"></i></span>
+            <div class="w-80" >
+                <app-select-search-input [selectedItem]="form.get('role')?.value" [dataSource]="roleList"
+                    [placeholder]="'Select Role'" [search]="true" (onSelectedItem)="selectedItem($event)">
+                </app-select-search-input>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-10 col-md-8 line ms-2 my-3"></div>
+
+    <div class="buttons-wrapper">
+        <button class="discard-button pointer col-3 col-md-1" (click)="handleCancel()">
+            Cancel
+        </button>
+        <button class="apply-changes-button  pointer col-3  col-md-1" [disabled]="form.invalid" type="button"
+            (click)="handleClickEvent()">
+            {{'Next'}}
+        </button>
+    </div>
+</form>

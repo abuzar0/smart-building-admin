@@ -1,0 +1,1748 @@
+{
+  "HELLO": "Hello",
+  "WELCOME": "Welcome",
+  "login": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "button": "Sign In",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password"
+  },
+  "forgot": {
+    "title": "Forgot Password",
+    "email": "Email",
+    "emailPlaceholder": "E-mail",
+    "button": "Forgot Password",
+    "back": "Back to login"
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm New Password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "requiredNewPassword": "New password is required.",
+    "minLength": "Must be at least 8 characters.",
+    "requiredConfirmPassword": "Confirmation password is required.",
+    "mismatch": "Passwords do not match.",
+    "cancel": "Cancel",
+    "update": "Update Password"
+  },
+  "updatePassword": {
+    "title": "Update Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm New Password",
+    "placeholders": {
+      "current": "Current Password",
+      "new": "Enter new password",
+      "confirm": "Confirm new password"
+    },
+    "errors": {
+      "requiredCurrent": "Current password is required.",
+      "minLengthCurrent": "Must be at least 6 characters.",
+      "requiredNew": "New password is required.",
+      "minLengthNew": "Must be at least 8 characters.",
+      "requiredConfirm": "Confirmation password is required.",
+      "mismatch": "Passwords do not match."
+    },
+    "buttons": {
+      "skip": "Skip Now",
+      "update": "Update Password"
+    }
+  },
+  "header": {
+    "languageLabel": "Language",
+    "english": "English",
+    "arabic": "العربية",
+    "theme": {
+      "light": "Light Mode",
+      "dark": "Dark Mode"
+    },
+    "notification": {
+      "title": "Notification",
+      "empty": "No Notification",
+      "viewAll": "view all"
+    },
+    "profile": {
+      "settings": "Profile Setting",
+      "logout": "Logout"
+    }
+  },
+  "building_header": {
+    "title": "Building a Smarter Future",
+    "subtitle": "Managing your building is a click away.",
+    "createButton": "Create new Building",
+    "view": {
+      "grid": "Grid",
+      "list": "List"
+    }
+  },
+  "buildingCard": {
+    "devicesFloorsInfo": "{{count}} Devices installed and {{floors}} Floors.",
+    "exploreButton": "Explore",
+    "device": "Devices",
+    "floor": "Floors"
+  },
+  "buildingList": {
+    "index": "#",
+    "name": "Building Name",
+    "address": "Address",
+    "overview": "Overview",
+    "devicesFloorsInfo": "{{count}} Devices installed and {{floors}} Floors.",
+    "device": "Devices",
+    "floor": "Floors"
+  },
+  "buildingForm": {
+    "title": {
+      "create": "Create a Building",
+      "update": "Update a Building"
+    },
+    "nameLabel": "Building Name",
+    "namePlaceholder": "Choose a name for your building",
+    "addressLabel": "Building Address",
+    "addressPlaceholder": "Choose an address for your building",
+    "typeLabel": "Building Type",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Select a country",
+    "regionLabel": "Region",
+    "regionPlaceholder": "Select a region",
+    "providerLabel": "Electricity Provider",
+    "providerPlaceholder": "Select an electricity provider",
+    "cancel": "Cancel",
+    "create": "Create",
+    "update": "Update"
+  },
+  "buildingTypes": {
+    "commercial": {
+      "title": "Commercial Building",
+      "description": "Shops / Offices / Retail Spaces"
+    },
+    "residential": {
+      "title": "Residential Building",
+      "description": "Apartments / Homes / Villas"
+    },
+    "industrial": {
+      "title": "Industrial Building",
+      "description": "Factories / Warehouses / Plants"
+    },
+    "institutional": {
+      "title": "Institutional Building",
+      "description": "Schools / Hospitals / Government"
+    },
+    "mixed-use": {
+      "title": "Mixed-Use Building",
+      "description": "Residential & Commercial Spaces"
+    }
+  },
+  "building_dashboard": {
+    "total_floors": "Total Floors",
+    "total_rooms": "Total Rooms",
+    "total_devices": "Total Devices",
+    "online_devices": "Online Devices",
+    "offline_devices": "Offline Devices",
+    "today_energy_used": "Today's Energy Used",
+    "today_energy_cost": "Today's Energy Cost",
+    "total_people": "Total People",
+    "avg_temperature": "Avg. Temperature",
+    "avg_humidity": "Avg. Humidity",
+    "avg_co2_level": "Avg. CO₂ Level",
+    "last_24_hours": "Last 24 hours",
+    "energy_consumption_cast": "Energy Consumption Cost",
+    "user_name": "User Name",
+    "email": "Email",
+    "unassign": "Unassign"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "manage_building": "Manage Building",
+    "floor": "Floors",
+    "room": "Spaces",
+    "devices": "Devices",
+    "reports": "Report",
+    "schedular": "Scheduling",
+    "threshold": "Threshold",
+    "role_access": "Role & Access",
+    "manage_user": "Manage User",
+    "favorite": "Favorite"
+  },
+  "report": {
+    "header": {
+      "title": "Smart Building Reporting Dashboard",
+      "description": "Track device alerts, energy usage, and building status in real-time for smarter, more efficient operations."
+    },
+    "form": {
+      "reportType": {
+        "label": "Report Type",
+        "placeholder": "Report Type"
+      },
+      "floor": {
+        "label": "Floor",
+        "placeholder": "Select Floor"
+      },
+      "startDate": {
+        "label": "Start Date",
+        "error": "Start date is required and cannot be in the future."
+      },
+      "endDate": {
+        "label": "End Date",
+        "error": "End date cannot be before start date."
+      },
+      "button": "Generate Report"
+    },
+    "table": {
+      "deviceName": "Device Name",
+      "locationName": "Location Name",
+      "locationType": "Location Type",
+      "importEnergy": "Import Energy",
+      "estimatedCost": "Estimated Cost",
+      "eventDate": "Event Date",
+      "temperature": "Temp (°C)",
+      "humidity": "Humidity (%)",
+      "co2": "CO2 (ppm)",
+      "leakStatus": "Leak Status",
+      "smokeStatus": "Smoke Status",
+      "smokeDetected": "Smoke Detected",
+      "leakDetected": "Leak Detected",
+      "noLeak": "No Leak"
+    },
+    "export": {
+      "csv": "Export CSV",
+      "pdf": "Export PDF"
+    }
+  },
+  "userManagement": {
+    "header": {
+      "title": "User Management in Smart Building",
+      "description": "Manage user roles, accounts, and permissions for secure and efficient smart building access. Customize roles, activate/deactivate users, and enhance security.",
+      "createBtn": "Create New User"
+    },
+    "form": {
+      "title": {
+        "create": "Create a User",
+        "update": "Update a User"
+      },
+      "username": {
+        "label": "Name",
+        "placeholder": "Enter user name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter user email"
+      },
+      "role": {
+        "label": "Select Role",
+        "placeholder": "Select Role"
+      },
+      "building": {
+        "label": "Select Building",
+        "placeholder": "Assign Building"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "submit": "Submit"
+      }
+    }
+  },
+  "modal": {
+    "assigne": {
+      "title": "Are you sure?",
+      "text": "By adding this user to the building, they will gain access to the premises and any associated facilities based on their assigned permissions and roles.",
+      "cancel": "Cancel",
+      "assignee": "Assign"
+    },
+    "delete": {
+      "title": "Are you sure?",
+      "text": "Deactivating this user cannot be undone immediately.By deactivating this user, their access will be restricted, and all associated settings and permissions will be disabled.",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    },
+    "activate": {
+      "title": "Are you sure?",
+      "text": "This user account is currently inactive. By activating this user, their access will be restored, and they will regain all associated settings and permissions.",
+      "cancel": "Cancel",
+      "activate": "Activate"
+    },
+    "role_modal": {
+      "text": "Once deleted, this action cannot be undone. By deleting this role, you’ll permanently remove it, along with all associated settings, users and data.",
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "meta": {
+        "created": "Created",
+        "updated": "Updated"
+      }
+    }
+  },
+  "roles_responsibilities": {
+    "title": "Roles & Responsibilities in Smart Building Management",
+    "description": "Define user roles and their permissions to ensure seamless control and automation of your smart building.",
+    "create_button": {
+      "role": "Create new Role",
+      "permission": "Create new Permission"
+    },
+    "tabs": {
+      "role": "Roles",
+      "permission": "Permissions"
+    },
+    "form": {
+      "title": {
+        "create": "Create a Role",
+        "update": "Update a Role"
+      },
+      "role_name_label": "Role Name",
+      "role_name_placeholder": "Choose a name for your role",
+      "table": {
+        "check_all": "Check All",
+        "number": "#",
+        "feature": "Feature Name",
+        "create": "Create",
+        "read": "Read",
+        "edit": "Edit",
+        "delete": "Delete",
+        "control": "Control",
+        "assignee": "“Assign Building / Devices",
+        "restore": "Restore",
+        "read_required_warning": "⚠️ \"Read\" must be checked if any other action is selected."
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "submit": "Submit"
+      }
+    },
+    "table": {
+      "index": "#",
+      "name": "Name",
+      "created": "Created",
+      "updated": "Updated",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete"
+    }
+  },
+  "threshold": {
+    "header": {
+      "title": "Smart IoT Threshold Manager",
+      "description": "Monitor and control IoT device thresholds efficiently with real-time alerts and automation.",
+      "createBtn": "Create new Threshold"
+    },
+    "card": {
+      "delete": "Delete Threshold",
+      "createdBy": "Created by",
+      "explore": "Explore"
+    },
+    "table": {
+      "index": "#",
+      "name": "Label Name",
+      "createdBy": "Created By",
+      "view": "View",
+      "delete": "Delete"
+    },
+    "form": {
+      "title": "Create a Threshold",
+      "label": "Threshold Label",
+      "co2": "CO2",
+      "energy": "Energy Consumption",
+      "occupancy": "Occupancy",
+      "smokeTemp": "Smoke Temperature",
+      "temperature": "Temperature",
+      "water": "Water Consumption",
+      "humidity": "Humidity",
+      "back": "Back",
+      "submit": "Submit",
+      "placeholder": {
+        "label": "Label",
+        "co2": "CO2 (ppm)",
+        "energy": "Energy (kWh/day)",
+        "occupancy": "Occupancy (%)",
+        "smokeTemp": "Smoke Temp (°C)",
+        "temperature": "Temp (°C)",
+        "water": "Water (L/day)",
+        "humidity": "Humidity (%)"
+      }
+    },
+    "details": {
+      "threshold_details": "Threshold Details",
+      "created_by": "Created By",
+      "label": "Label",
+      "co2": "CO2",
+      "humidity": "Humidity",
+      "energy_consumption": "Energy Consumption",
+      "occupancy": "Occupancy",
+      "smoke_temp": "Smoke Temperature",
+      "temperature": "Temperature",
+      "water_consumption": "Water Consumption",
+      "back": "Back",
+      "submit": "Submit",
+      "create_threshold": "Create a Threshold"
+    }
+  },
+  "scheduler": {
+    "header": {
+      "title": "Smart IoT Scheduler",
+      "descp": "Efficiently automate and manage your IoT devices with a powerful scheduling system.",
+      "btnText": "Create New Schedule"
+    },
+    "card": {
+      "delete": "Delete Scheduler",
+      "nextTaskPrefix": "Next task:",
+      "unreachable": "Device unreachable",
+      "scheduled": "Scheduled",
+      "explore": "Explore"
+    },
+    "table": {
+      "index": "#",
+      "deviceName": "Device Name",
+      "summary": "Summary",
+      "nextTaskPrefix": "Next task:",
+      "unreachable": "Device unreachable",
+      "scheduled": "Scheduled"
+    },
+    "form": {
+      "title": {
+        "create": "Create a Scheduler",
+        "update": "Update a Scheduler"
+      },
+      "scheduleTime": "Schedule Time",
+      "taskDescription": "Task Description",
+      "taskDescriptionPlaceholder": "Enter task description",
+      "selectDevice": "Select Device",
+      "selectDevicePlaceholder": "Select Device",
+      "frequency": "Frequency",
+      "actionState": "Action State",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "frequencyOptions": {
+        "once": {
+          "label": "Once",
+          "description": "Run the task one time"
+        },
+        "daily": {
+          "label": "Daily",
+          "description": "Run the task every day"
+        },
+        "weekly": {
+          "label": "Weekly",
+          "description": "Run the task every week"
+        }
+      },
+      "actionStates": {
+        "on": {
+          "label": "On",
+          "description": "Turn the device on"
+        },
+        "off": {
+          "label": "Off",
+          "description": "Turn the device off"
+        }
+      }
+    },
+    "details": {
+      "schedulerDetails": "Scheduler Details",
+      "taskId": "Task ID",
+      "scheduledTime": "Scheduled Time",
+      "status": "Status",
+      "taskType": "Task Type",
+      "taskDescription": "Task Description",
+      "deviceName": "Device Name",
+      "deviceLocation": "Device Location",
+      "building": "Building",
+      "floor": "Floor",
+      "room": "Space",
+      "action": "Action",
+      "frequency": "Frequency",
+      "createdBy": "Created By"
+    },
+    "filterbar": {
+      "all": "All",
+      "once": "Once",
+      "daily": "Daily",
+      "weekly": "Week"
+    }
+  },
+  "filterbar": {
+    "placeholder": "Search by name",
+    "clearIconAlt": "Clear search",
+    "searchIconAlt": "Search"
+  },
+  "device": {
+    "header": {
+      "title": "Effortless Device Management",
+      "description": "Navigate and organize your device with ease.",
+      "createButton": "Create new Device",
+      "associateButton": "Device Association"
+    },
+    "filterbar": {
+      "selectFloor": "Select Floor",
+      "selectRoom": "Select Space"
+    },
+    "card": {
+      "edit": "Edit Device",
+      "delete": "Delete Device",
+      "favorite": "Add to Favorites",
+      "favorite_Remove": "Remove Favorite",
+      "status": "Status",
+      "installedLocation": "Installed Location",
+      "explore": "Explore"
+    },
+    "table": {
+      "index": "#",
+      "name": "Name",
+      "connectivityStatus": "Connectivity Status"
+    },
+    "stat_card": {
+      "title": "Device Statistics",
+      "powerConsumption": "Power Consumption",
+      "co2Level": "CO2 Level",
+      "temperatureHumidity": "Temperature & Humidity",
+      "occupancy": "Occupancy",
+      "energyConsumptionCost": "Energy Consumption Cost"
+    },
+    "detail": {
+      "title": "Device Information",
+      "action": "Action",
+      "deviceDetails": "Device Details",
+      "deviceName": "Device Name",
+      "deviceType": "Device Type",
+      "deviceStatus": "Device Status",
+      "vendor":"Vendor",
+      "deviceNumber": "Device Number",
+      "deviceThreshold": "Device Threshold",
+      "roomDetails": "Space Details",
+      "roomName": "Space Name",
+      "roomType": "Space Type",
+      "buildingDetails": "Building Details",
+      "buildingName": "Building Name",
+      "buildingAddress": "Address",
+      "buildingType": "Building Type",
+      "floorDetails": "Floor Details",
+      "floorName": "Floor Name",
+      "floorLocation": "Floor Location",
+      "floorType": "Floor Type"
+    },
+    "associate_form": {
+      "associateDevice": {
+        "title": "Associate a Device",
+        "locationType": {
+          "label": "Select Type Association",
+          "placeholder": "Select Type Association"
+        },
+        "selectLocation": {
+          "Room": {
+            "label": "Select Space",
+            "placeholder": "Select Space"
+          },
+          "Floor": {
+            "label": "Select Floor",
+            "placeholder": "Select Floor"
+          }
+        },
+        "selectDevice": {
+          "label": "Select Device",
+          "placeholder": "Select Device"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "submit": "Submit"
+        }
+      }
+    },
+    "form": {
+      "title": {
+        "create": "Create a Device",
+        "update": "Update a Device"
+      },
+      "name": {
+        "label": "Device Name",
+        "placeholder": "Choose a name for your device"
+      },
+       "vendor": {
+        "label": "Device Vendor",
+        "placeholder": "Choose a vendor for your device"
+      },
+      "number": {
+        "label": "Device Number",
+        "placeholder": "Enter a number for your device"
+      },
+      "type": {
+        "label": "Device Type",
+        "temperature_humidity": {
+          "title": "Temperature & Humidity Sensor",
+          "description": "Monitors space temperature and humidity in real-time"
+        },
+        "co2": {
+          "title": "Air Quality  Sensor",
+          "description": "Monitors CO₂,Temperature,Humidity levels to ensure air quality and safety"
+        },
+        "water": {
+          "title": "Water Consumption Sensor",
+          "description": "Tracks water usage in real-time to promote conservation and detect leaks"
+        },
+        "occupancy": {
+          "title": "Occupancy Sensor",
+          "description": "Detects space occupancy and movement"
+        },
+        "water_leakage": {
+          "title": "Water Leakage Detector",
+          "description": "Detects water leaks to prevent damage"
+        },
+        "energy_meter": {
+          "title": "Energy Meter",
+          "description": "Measures power consumption in real-time"
+        },
+        "camera": {
+          "title": "Surveillance Camera",
+          "description": "Monitors security with video surveillance"
+        },
+        "bulb": {
+          "title": "Smart Bulb",
+          "description": "Intelligent lighting system with remote control"
+        },
+        "socket": {
+          "title": "Smart Socket",
+          "description": "Remote-controlled power outlet for appliances"
+        },
+        "smoke_detector": {
+          "title": "Smoke Detector",
+          "description": "Detects smoke and triggers alerts for fire safety"
+        }
+      },
+      "threshold": {
+        "label": "Device Threshold",
+        "placeholder": "Choose a threshold for your device",
+        "temperature": {
+          "label": "Temperature Threshold",
+          "placeholder": "Enter maximum temperature limit"
+        },
+        "humidity": {
+          "label": "Humidity Threshold",
+          "placeholder": "Enter maximum humidity limit"
+        },
+        "co2Level": {
+          "label": "CO₂ Level Threshold",
+          "placeholder": "Enter CO₂ ppm threshold"
+        }
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "submit": "Submit"
+      }
+    }
+  },
+  "room": {
+    "header": {
+      "title": "Effortless Space Management",
+      "description": "Navigate and organize your spaces with ease.",
+      "button": "Create new Space"
+    },
+    "filterbar": {
+      "selectFloor": "Select Floor"
+    },
+    "card": {
+      "edit": "Edit Space",
+      "delete": "Delete Space",
+      "description": "Space are on {{floor}}, their type is {{type}}, and {{count}} devices are integrated.",
+      "explore": "Explore"
+    },
+    "table": {
+      "index": "#",
+      "name": "Space Name",
+      "overview": "Overview",
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "description": "Space are on {{floor}}, their type is {{type}}, and {{count}} devices are integrated."
+    },
+    "form": {
+      "label": {
+        "name": "Space Name",
+        "floor": "Select Floor",
+        "type": "Space Type"
+      },
+      "placeholder": {
+        "name": "Choose a name for your space",
+        "floor": "Select Floor"
+      },
+      "types": {
+        "apartment-living-room": {
+          "name": "Living Space",
+          "description": "Common area for relaxation"
+        },
+        "apartment-bedroom": {
+          "name": "Bedroom",
+          "description": "Private sleeping space"
+        },
+        "apartment-kitchen": {
+          "name": "Kitchen",
+          "description": "Cooking and food preparation"
+        },
+        "apartment-bathroom": {
+          "name": "Bathroom",
+          "description": "Private hygiene area"
+        },
+        "apartment-store-room": {
+          "name": "Store Space",
+          "description": "Storage area for household items"
+        },
+        "villa-master-bedroom": {
+          "name": "Master Bedroom",
+          "description": "Large private bedroom"
+        },
+        "villa-dining-room": {
+          "name": "Dining Space",
+          "description": "Formal eating space"
+        },
+        "villa-guest-room": {
+          "name": "Guest Space",
+          "description": "Space for guests"
+        },
+        "villa-terrace": {
+          "name": "Terrace",
+          "description": "Outdoor space with seating"
+        },
+        "penthouse-luxury-suite": {
+          "name": "Luxury Suite",
+          "description": "High-end living space"
+        },
+        "penthouse-private-terrace": {
+          "name": "Private Terrace",
+          "description": "Outdoor space with views"
+        },
+        "office-meeting-room": {
+          "name": "Meeting Space",
+          "description": "Conference and discussions"
+        },
+        "office-private-office": {
+          "name": "Private Office",
+          "description": "Personal workspace"
+        },
+        "office-workstation": {
+          "name": "Workstation",
+          "description": "Shared work desk area"
+        },
+        "retail-showroom": {
+          "name": "Showroom",
+          "description": "Display area for products"
+        },
+        "retail-cash-counter": {
+          "name": "Cash Counter",
+          "description": "Billing and checkout area"
+        },
+        "retail-stock-room": {
+          "name": "Stock Space",
+          "description": "Storage for goods"
+        },
+        "coworking-hot-desk": {
+          "name": "Hot Desk",
+          "description": "Temporary shared workspace"
+        },
+        "coworking-lounge": {
+          "name": "Lounge",
+          "description": "Relaxation and networking area"
+        },
+        "manufacturing-production-area": {
+          "name": "Production Area",
+          "description": "Manufacturing and assembly"
+        },
+        "manufacturing-quality-control": {
+          "name": "Quality Control Space",
+          "description": "Inspection and testing space"
+        },
+        "warehouse-storage-unit": {
+          "name": "Storage Unit",
+          "description": "Space for goods storage"
+        },
+        "warehouse-packing-area": {
+          "name": "Packing Area",
+          "description": "Packaging and dispatch"
+        },
+        "logistics-loading-dock": {
+          "name": "Loading Dock",
+          "description": "Loading and unloading area"
+        },
+        "logistics-sorting-area": {
+          "name": "Sorting Area",
+          "description": "Sorting and organizing packages"
+        },
+        "hospital-patient-room": {
+          "name": "Patient Space",
+          "description": "Space for admitted patients"
+        },
+        "hospital-operating-room": {
+          "name": "Operating Space",
+          "description": "Surgical procedures area"
+        },
+        "hospital-pharmacy": {
+          "name": "Pharmacy",
+          "description": "Medicine and supply storage"
+        },
+        "educational-classroom": {
+          "name": "Classroom",
+          "description": "Space for lectures"
+        },
+        "educational-library": {
+          "name": "Library",
+          "description": "Books and study area"
+        },
+        "educational-lab": {
+          "name": "Lab",
+          "description": "Scientific research and study area"
+        },
+        "government-service-counter": {
+          "name": "Service Counter",
+          "description": "Public assistance desk"
+        },
+        "commercial-living-space": {
+          "name": "Living Space",
+          "description": "Residential area"
+        },
+        "commercial-shop-area": {
+          "name": "Shop Area",
+          "description": "Retail or business space"
+        },
+        "office-retail-workspace": {
+          "name": "Workspace",
+          "description": "Office environment"
+        },
+        "office-retail-store": {
+          "name": "Retail Store",
+          "description": "Selling space"
+        },
+        "hotel-room": {
+          "name": "Hotel Space",
+          "description": "Temporary stay area"
+        },
+        "hotel-lobby": {
+          "name": "Lobby",
+          "description": "Reception and common area"
+        }
+      },
+      "button": {
+        "cancel": "Cancel",
+        "submit": "Submit"
+      }
+    },
+    "stat_card": {
+      "title": "Space Statistics",
+      "power_consumption": "Energy Consumption",
+      "energy_consumption_cast": "Energy Consumption Cost",
+      "temperature_humidity": "Temperature & Humidity",
+      "occupancy": "Occupancy",
+      "co2_level": "CO2 Level"
+    },
+    "detail": {
+      "section_title": "Space Information",
+      "room_details": "Space Details",
+      "threshold_details": "Threshold Details",
+      "room_name": "Space Name",
+      "room_type": "Space Type",
+      "device_integrated": "Device Integrated",
+      "floor_name": "Floor Name",
+      "floor_type": "Floor Type",
+      "temperature": "Temperature",
+      "co2_level": "Co2 Level",
+      "energy_consumption": "Energy Consumption",
+      "water_consumption": "Water Consumption",
+      "occupancy": "Occupancy",
+      "humidity": "Humidity",
+      "smoke_temperature": "Smoke Temperature",
+      "header": {
+        "title": "Detailed Space Insights & Device Allocation",
+        "description": "Get insights into Space usage and easily manage device."
+      }
+    }
+  },
+  "floor": {
+    "header": {
+      "title": "Effortless Floor Management",
+      "description": "Navigate and organize your floors with ease.",
+      "btnText": "Create new Floor"
+    },
+    "filterbar": {
+      "changeBuilding": "Change Building"
+    },
+    "card": {
+      "edit": "Edit Floor",
+      "delete": "Delete Floor",
+      "explore": "Explore",
+      "description": "This floor {{location}}, has {{rooms}} spaces and {{devices}} devices integrated."
+    },
+    "table": {
+      "number": "#",
+      "name": "Floor Name",
+      "location": "Floor Location",
+      "threshold": "Floor Threshold"
+    },
+    "form": {
+      "nameLabel": "Floor Name",
+      "namePlaceholder": "Choose a name for your Floor",
+      "locationLabel": "Floor Location",
+      "locationPlaceholder": "Choose a location for your Floor",
+      "typeLabel": "Floor Type",
+      "nextButton": "Next",
+      "cancelButton": "Cancel",
+      "thresholdSection": {
+        "title": "Threshold",
+        "customThresholdLabel": "Set a Custom Threshold Value",
+        "labelThresholdLabel": "Set a Label Threshold Value",
+        "co2Label": "Avg CO2",
+        "co2Placeholder": "Average CO2 (ppm)",
+        "humidityLabel": "Avg Humidity",
+        "humidityPlaceholder": "Average Humidity (%)",
+        "energyConsumptionLabel": "Energy Consumption",
+        "energyConsumptionPlaceholder": "Energy (kWh/day)",
+        "occupancyLabel": "Occupancy",
+        "occupancyPlaceholder": "Occupancy (%)",
+        "smokeTemperatureLabel": "Smoke Temperature",
+        "smokeTemperaturePlaceholder": "Smoke Temp (°C)",
+        "temperatureLabel": "Avg Temperature",
+        "temperaturePlaceholder": "Average Temp (°C)",
+        "waterConsumptionLabel": "Water Consumption",
+        "waterConsumptionPlaceholder": "Water (L/day)",
+        "selectThresholdLabel": "Select Threshold",
+        "selectThresholdPlaceholder": "Select Threshold",
+        "backButton": "Back",
+        "submitButton": "Submit"
+      },
+      "types": {
+        "apartment-floor": {
+          "name": "Apartment Floor",
+          "description": "Multiple units on a single floor"
+        },
+        "villa-floor": {
+          "name": "Villa Floor",
+          "description": "Single-family home layout"
+        },
+        "penthouse-floor": {
+          "name": "Penthouse Floor",
+          "description": "Topmost luxury apartment floor"
+        },
+        "office-floor": {
+          "name": "Office Floor",
+          "description": "Corporate workspace"
+        },
+        "retail-floor": {
+          "name": "Retail Floor",
+          "description": "Shops and malls"
+        },
+        "co-working-space-floor": {
+          "name": "Co-Working Space Floor",
+          "description": "Shared office environment"
+        },
+        "manufacturing-floor": {
+          "name": "Manufacturing Floor",
+          "description": "Production and assembly area"
+        },
+        "warehouse-storage-floor": {
+          "name": "Warehouse Storage Floor",
+          "description": "Storage and inventory management"
+        },
+        "logistics-distribution-floor": {
+          "name": "Logistics & Distribution Floor",
+          "description": "Transportation and supply chain"
+        },
+        "hospital-floor": {
+          "name": "Hospital Floor",
+          "description": "Medical spaces & ICUs"
+        },
+        "educational-floor": {
+          "name": "Educational Floor",
+          "description": "Classrooms & auditoriums"
+        },
+        "government-office-floor": {
+          "name": "Government Office Floor",
+          "description": "Public administration offices"
+        },
+        "commercial-residential-floor": {
+          "name": "Commercial / Residential Floor",
+          "description": "Mixed business and living spaces"
+        },
+        "office-retail-floor": {
+          "name": "Office / Retail Floor",
+          "description": "Workspaces combined with retail shops"
+        },
+        "hotel-apartment-floor": {
+          "name": "Hotel / Apartment Floor",
+          "description": "Temporary and permanent residences"
+        }
+      }
+    },
+    "detail": {
+      "header": "Floor Information",
+      "floorDetailsTitle": "Floor Details",
+      "floorName": "Floor Name",
+      "floorLocation": "Floor Location",
+      "floorType": "Floor Type",
+      "deviceIntegrated": "Device Integrated",
+      "totalRooms": "Total Rooms",
+      "thresholdDetailsTitle": "Threshold Details",
+      "temperature": "Avg Temperature",
+      "humidity": "Avg Humidity",
+      "co2Level": "Avg CO2 Level",
+      "energyConsumption": "Energy Consumption",
+      "waterConsumption": "Water Consumption",
+      "occupancy": "Occupancy",
+      "smokeTemperature": "Smoke Temperature",
+      "header_bar": {
+        "title": "Detailed Floor Insights & Space Allocation",
+        "desp": "Get insights into floor usage and easily manage spaces."
+      }
+    },
+    "stat_card": {
+      "title": "Floor Statistics",
+      "power_consumption": "Power Consumption",
+      "energy_consumption_cast": "Energy Consumption Cost",
+      "temperature_humidity": "Temperature & Humidity",
+      "occupancy": "Occupancy",
+      "co2_level": "CO2 Level"
+    },
+    "tabs": {
+      "by_room": "By Space",
+      "by_devices": "By Devices"
+    }
+  },
+  "viewToggle": {
+    "grid": "Grid",
+    "list": "List"
+  },
+  "chart": {
+    "cold": "Cold",
+    "comfortable": "Comfortable",
+    "hot": "Hot",
+    "low": "Low",
+    "normal": "Normal",
+    "high": "High",
+    "time_last_24_hours": "Time (Last 24 Hours)",
+    "energy_consumption": "Energy Consumption",
+    "estimated_cost": "Estimated Cost",
+    "energy_cost_axis": "Energy Consumption (kWh) & Cost",
+    "filterbar": {
+      "Yesterday": "Yesterday",
+      "Last Week": "Last Week",
+      "Last Month": "Last Month"
+    },
+    "temperatureHumidity": {
+      "xAxisTitle": "Time Range",
+      "yAxisTemperature": "Temperature (°C)",
+      "yAxisHumidity": "Humidity (%)",
+      "series": {
+        "temperature": "Temperature",
+        "humidity": "Humidity"
+      },
+      "tooltip": {
+        "temperature": "{name}: [b]{valueY}°C[/]",
+        "humidity": "{name}: [b]{valueY}%[/]"
+      }
+    },
+    "occupancyChart": {
+      "xAxisTitle": "Date",
+      "yAxisTotalPeople": "Total People",
+      "series": {
+        "total": "Total People"
+      },
+      "tooltip": {
+        "total": "{name}: [b]{valueY}[/]"
+      }
+    },
+    "energyConsumptionChart": {
+      "xAxisTitle": "Time Range",
+      "yAxisTitle": "Energy Consumption (kWh)",
+      "series": {
+        "importEnergy": "Energy Consumption"
+      },
+      "tooltip": {
+        "importEnergy": "{name}: [b]{valueY} kWh[/]"
+      }
+    },
+    "co2Chart": {
+      "xAxisTitle": "Date Range",
+      "yAxisTitle": "CO₂ Level (ppm)",
+      "series": {
+        "co2": "CO₂"
+      },
+      "tooltip": {
+        "co2": "{name}:\\n[bold]{valueY} ppm[/]"
+      }
+    }
+  },
+  "room_types": {
+    "Living Room": "Living Space",
+    "Bedroom": "Bedroom",
+    "Kitchen": "Kitchen",
+    "Bathroom": "Bathroom",
+    "Store Room": "Store Space",
+    "Master Bedroom": "Master Bedroom",
+    "Dining Room": "Dining Space",
+    "Guest Room": "Guest Space",
+    "Terrace": "Terrace",
+    "Luxury Suite": "Luxury Suite",
+    "Private Terrace": "Private Terrace",
+    "Meeting Room": "Meeting Space",
+    "Private Office": "Private Office",
+    "Workstation": "Workstation",
+    "Showroom": "Showroom",
+    "Cash Counter": "Cash Counter",
+    "Stock Room": "Stock Space",
+    "Hot Desk": "Hot Desk",
+    "Lounge": "Lounge",
+    "Production Area": "Production Area",
+    "Quality Control Room": "Quality Control Space",
+    "Storage Unit": "Storage Unit",
+    "Packing Area": "Packing Area",
+    "Loading Dock": "Loading Dock",
+    "Sorting Area": "Sorting Area",
+    "Patient Room": "Patient Space",
+    "Operating Room": "Operating Space",
+    "Pharmacy": "Pharmacy",
+    "Classroom": "Classroom",
+    "Library": "Library",
+    "Lab": "Lab",
+    "Service Counter": "Service Counter",
+    "Living Space": "Living Space",
+    "Shop Area": "Shop Area",
+    "Workspace": "Workspace",
+    "Retail Store": "Retail Store",
+    "Hotel Room": "Hotel Space",
+    "Lobby": "Lobby"
+  },
+  "toast": {
+    "login": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Login successful!"
+        },
+        "202": {
+          "title": "Success",
+          "text": "Logout successful!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Please fill in all required fields."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "Invalid username or password."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Your account is restricted. Contact support."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "User account does not exist."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Try again later."
+        }
+      }
+    },
+    "auth": {
+      "200": {
+        "title": "Success",
+        "text": "Request successful!"
+      },
+      "209": {
+        "title": "Success",
+        "text": "Password reset link sent! Check your email to continue."
+      },
+      "400": {
+        "title": "Bad Request",
+        "text": "Please fill in all required fields."
+      },
+      "401": {
+        "title": "Unauthorized",
+        "text": "Invalid username or password."
+      },
+      "410": {
+        "title": "Expire",
+        "text": "Your Session are expire please request again."
+      },
+      "403": {
+        "title": "Forbidden",
+        "text": "Your account is restricted. Contact support."
+      },
+      "404": {
+        "title": "Not Found",
+        "text": "User account does not exist."
+      },
+      "500": {
+        "title": "Server Error",
+        "text": "Something went wrong. Try again later."
+      }
+    },
+    "building": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Building data retrieved successfully!"
+        },
+        "206": {
+          "title": "Success",
+          "text": "Un-Assign User successfully!"
+        },
+        "201": {
+          "title": "Created",
+          "text": "Building created successfully!"
+        },
+        "204": {
+          "title": "Updated",
+          "text": "Building updated successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid building data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to access this building."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to this building is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Building not found."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "A building with this name already exists."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Please try again later."
+        }
+      }
+    },
+    "floor": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Floor data retrieved successfully!"
+        },
+        "201": {
+          "title": "Created",
+          "text": "Floor created successfully!"
+        },
+        "202": {
+          "title": "Deleted",
+          "text": "Floor deleted successfully!"
+        },
+        "204": {
+          "title": "Updated",
+          "text": "Floor updated successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid floor data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to access this floor."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to this floor is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Floor not found."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "A floor with this name already exists."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Please try again later."
+        }
+      }
+    },
+    "room": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Space data retrieved successfully!"
+        },
+        "201": {
+          "title": "Created",
+          "text": "Space created successfully!"
+        },
+        "202": {
+          "title": "Deleted",
+          "text": "Space deleted successfully!"
+        },
+        "204": {
+          "title": "Updated",
+          "text": "Space updated successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid space data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to access this space."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to this space is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Space not found."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "A space with this name already exists."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Please try again later."
+        }
+      }
+    },
+    "device": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Device data retrieved successfully!"
+        },
+        "201": {
+          "title": "Created",
+          "text": "Device created successfully!"
+        },
+        "202": {
+          "title": "Deleted",
+          "text": "Device deleted successfully!"
+        },
+        "204": {
+          "title": "Updated",
+          "text": "Device updated successfully!"
+        },
+        "210": {
+          "title": "Association Successful",
+          "text": "Device successfully associated."
+        },
+        "211": {
+          "title": "Disassociation Successful",
+          "text": "Device successfully disassociated."
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid device data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to access this device."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to this device is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Device not found."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "A device with this identifier already exists."
+        },
+        "422": {
+          "title": "Association Failed",
+          "text": "Device association failed due to invalid data."
+        },
+        "423": {
+          "title": "Already Associated",
+          "text": "Device is already associated with another entity."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Please try again later."
+        }
+      }
+    },
+    "threshold": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Threshold data retrieved successfully!"
+        },
+        "201": {
+          "title": "Created",
+          "text": "Threshold created successfully!"
+        },
+        "202": {
+          "title": "Deleted",
+          "text": "Threshold deleted successfully!"
+        },
+        "204": {
+          "title": "Updated",
+          "text": "Threshold updated successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid threshold data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to access this threshold."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to this threshold is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Threshold not found."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "A threshold with this value already exists."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Please try again later."
+        }
+      }
+    },
+    "scheduler": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Scheduled successfully!"
+        },
+        "201": {
+          "title": "Created",
+          "text": "Scheduled created successfully!"
+        },
+        "202": {
+          "title": "Deleted",
+          "text": "Scheduled deleted successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid scheduling request."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to schedule."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to this Scheduled is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Not found for scheduling."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "Already scheduled for this time slot."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Please try again later."
+        }
+      }
+    },
+    "role": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Role fetch successfully!"
+        },
+        "201": {
+          "title": "Success",
+          "text": "Role created successfully!"
+        },
+        "202": {
+          "title": "Success",
+          "text": "Role updated successfully!"
+        },
+        "204": {
+          "title": "Success",
+          "text": "Role deleted successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid role data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to manage roles."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Insufficient permissions to modify roles."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Requested role does not exist."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "Role name already exists."
+        },
+        "410": {
+          "title": "Conflict",
+          "text": "Please Use Other keyWord."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Try again later."
+        }
+      }
+    },
+    "permission": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Permissions fetched successfully!"
+        },
+        "201": {
+          "title": "Success",
+          "text": "Permissions created successfully!"
+        },
+        "202": {
+          "title": "Success",
+          "text": "Permissions updated successfully!"
+        },
+        "204": {
+          "title": "Success",
+          "text": "Permissions deleted successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid permission data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to manage permissions."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Insufficient permissions to modify this setting."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Requested permission does not exist."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "Permission with this name already exists."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Try again later."
+        }
+      }
+    },
+    "user": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "User fetched successfully!"
+        },
+        "201": {
+          "title": "Success",
+          "text": "User created successfully!"
+        },
+        "202": {
+          "title": "Success",
+          "text": "User updated successfully!"
+        },
+        "203": {
+          "title": "Success",
+          "text": "Profile updated successfully!"
+        },
+        "204": {
+          "title": "Success",
+          "text": "User Deactivated successfully!"
+        },
+        "205": {
+          "title": "Success",
+          "text": "User Activated successfully!"
+        },
+        "206": {
+          "title": "Success",
+          "text": "Assign Building successfully!"
+        },
+        "400": {
+          "title": "Bad Request",
+          "text": "Invalid user data provided."
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to manage users."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Insufficient permissions to modify this user."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "Requested user does not exist."
+        },
+        "409": {
+          "title": "Conflict",
+          "text": "User with this email already exists."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong. Try again later."
+        }
+      }
+    },
+    "notification": {
+      "status": {
+        "200": {
+          "title": "Success",
+          "text": "Notifications retrieved successfully!"
+        },
+        "206": {
+          "title": "Success",
+          "text": "Partial notifications retrieved successfully!"
+        },
+        "401": {
+          "title": "Unauthorized",
+          "text": "You are not authorized to access these notifications."
+        },
+        "403": {
+          "title": "Forbidden",
+          "text": "Access to these notifications is restricted."
+        },
+        "404": {
+          "title": "Not Found",
+          "text": "No notifications found."
+        },
+        "500": {
+          "title": "Server Error",
+          "text": "Something went wrong while fetching notifications. Please try again later."
+        }
+      }
+    },
+    "favourite": {
+      "add": {
+        "title": "Added to Favourites",
+        "text": "The device was successfully added to your favourites."
+      },
+      "remove": {
+        "title": "Removed from Favourites",
+        "text": "The device was removed from your favourites."
+      }
+    }
+  },
+  "alerts": {
+    "title": "Alert",
+    "energy_meter": "Energy consumption threshold breached by {{device}} in {{location}}. Current value: {{value}} kWh.",
+    "temperature": "Temperature threshold breached by {{device}} in {{location}}. Current value: {{value}} °C.",
+    "humidity": "Humidity threshold breached by {{device}} in {{location}}. Current value: {{value}}%.",
+    "co2": "Indoor CO2 concentration threshold breached by {{device}} in {{location}}. Current value: {{value}} ppm.",
+    "water_leakage": "Water leakage detected by {{device}} in {{location}}.",
+    "smoke_detector": "Smoke detected by {{device}} in {{location}}.",
+    "detail": {
+      "back": "Back",
+      "notificationDetail": "Notification Detail",
+      "time": "Time",
+      "attribute": "Attribute",
+      "details": "Details",
+      "deviceName": "Device Name",
+      "deviceId": "Device ID",
+      "location": "Location",
+      "am": "AM",
+      "pm": "PM"
+    }
+  },
+  "time": {
+    "seconds_ago": "{{value}} second(s) ago",
+    "minutes_ago": "{{value}} minute(s) ago",
+    "hour": "{{value}} hour",
+    "hours": "{{value}} hours",
+    "minute": "{{value}} minute",
+    "minutes": "{{value}} minutes",
+    "day": "{{value}} day",
+    "days": "{{value}} days",
+    "month": "{{value}} month",
+    "months": "{{value}} months",
+    "year": "{{value}} year",
+    "years": "{{value}} years",
+    "ago": "ago"
+  },
+  "profile_setting": {
+    "title": "Profile Settings",
+    "upload_image": "Upload Image",
+    "upload_note": "Supports only PNGs and JPEGs under 5MB.",
+    "user_name": "User Name",
+    "email": "Email",
+    "discard": "Discard",
+    "update": "Update",
+    "change_password": "Change Password",
+    "current_password": "Current Password",
+    "new_password": "New Password",
+    "confirm_new_password": "Confirm New Password",
+    "password_required": "Password is required.",
+    "new_password_required": "New password is required.",
+    "current_password_required": "Current password is required.",
+    "confirm_password_required": "Confirmation password is required.",
+    "min_length_6": "Must be at least 6 characters.",
+    "min_length_8": "Must be at least 8 characters.",
+    "enter_current_password": "Enter current password",
+    "enter_new_password": "Enter new password",
+    "enter_confirm_new_password": "Confirm new password",
+    "password_mismatch": "Passwords do not match.",
+    "cancel": "Cancel"
+  },
+  "action_button": {
+    "ON": "ON",
+    "OFF": "OFF"
+  },
+  "device_status": {
+    "ONLINE": "Online",
+    "OFFLINE": "Offline"
+  },
+  "airQualityInfo": {
+    "text_building": "This value is the daily average based on all sensors on this building. It helps you monitor general air quality without checking each space.",
+    "text_floor": "This value is the daily average based on all sensors on this floor. It helps you monitor general air quality without checking each space."
+  },
+  "occupancyInfo": {
+    "text_building": "This value is the daily average based on all sensors on this building. It helps you monitor general Occupancy  without checking each space.",
+    "text_floor": "This value is the daily average based on all sensors on this floor. It helps you monitor general Occupancy without checking each space."
+  },
+  "error_placeholder": {
+    "title": "Server Unavailable",
+    "message": "We're having trouble connecting to our servers right now. This might be a temporary issue with our service.",
+    "instruction": "If the problem persists, please check your internet connection or try again later.",
+    "try_again": "Try Again",
+    "unable_to_load": "Unable to Load",
+    "back_to_home": "Back to Home"
+  },
+  "file_image": {
+    "invalidType": "Invalid file type! Only PNGs and JPEGs allowed.",
+    "sizeExceeded": "File size exceeds 5MB limit!"
+  },
+  "validation": {
+    "emailFormat": "Enter a valid email address.",
+    "emailMaxLength": "Email must not exceed 50 characters.",
+    "passwordPattern": "Your password must include at least one uppercase letter, one lowercase letter, one number, and one special character.",
+    "passwordLength": "Password must be between 8 and 24 characters.",
+    "usernameFormat": "Username must contain alphabets only and spaces, max 50 characters.",
+    "usernameMaxLength": "Username cannot exceed 50 characters."
+  },
+  "favorite": {
+    "header": {
+      "title": "My Favorite",
+      "description": "Quickly access and control your most-used devices in one place. Customize your smart building experience by adding favorites for faster operation and monitoring."
+    }
+  },
+  "Device_Action": {
+    "title": "Device Action",
+    "message_on": "The Socket Wall is Successfully ON.",
+    "message_off": "The Socket Wall is Successfully OFF."
+  }
+}

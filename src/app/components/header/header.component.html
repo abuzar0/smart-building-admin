@@ -1,0 +1,132 @@
+<div class="align-item-center d-flex gap-3 header-bar justify-content-end px-3 w-100">
+
+    <div class="logo d-none d-md-flex">
+        <img src="/assets/images/logo.png" />
+        <h5 class="text">OmniLoop</h5>
+    </div>
+
+    <div ngbDropdown class="d-flex align-items-center">
+        <div ngbDropdownToggle class="form-group lang-wrapper ">
+            <span  for="languageSelect" class="mx-2  ">🌐 {{ selectedLang == 'en' ?
+                ('header.english' | translate) : ('header.arabic' | translate) }}</span>
+        </div>
+
+        <div ngbDropdownMenu class="">
+                <div ngbDropdownItem class="fs-13 pointer" (click)="switchLang('en')">
+                    {{ 'header.english' | translate }}
+                </div>
+                <div ngbDropdownItem class="fs-13 pointer " (click)="switchLang('ar')">
+                    {{ 'header.arabic' | translate }}
+                </div>
+            </div>
+        <!-- {{ 'header.languageLabel' | translate }}  -->
+
+        <!-- <select id="languageSelect" class="w-auto fs-13" [(ngModel)]="selectedLang" (change)="switchLang(selectedLang)">
+            <option class="fs-13" value="en"></option>
+            <option class="fs-13" value="ar"></option>
+        </select> -->
+    </div>
+
+    <div class="align-items-center d-flex">
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g fill="#ffd43b">
+                        <circle r="5" cy="12" cx="12"></circle>
+                        <path
+                            d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                        </path>
+                    </g>
+                </svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                    </path>
+                </svg></span>
+            <input type="checkbox" [(ngModel)]="mode" (change)="toggleTheme($event)" class="input">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div ngbDropdown class=" d-flex  justify-content-center align-item-center my-auto pointer">
+        <div class="badge-container">
+            <img ngbDropdownToggle id="dropdownBasic1" class="icon-container"
+                src="../../../assets/svgs/Notification.svg" alt="icon" />
+            <!-- <span class="badge content">9</span> -->
+        </div>
+        <div ngbDropdownMenu class="px-1 notification-dropdown" aria-labelledby="dropdownBasic1">
+            <div class="notify-wrapper">
+                <h3 class="ms-2 title">{{ 'header.notification.title' | translate }}</h3>
+            </div>
+
+            @if (notificationList.length >0) {
+            <div class="list-wrapper">
+                @for (item of notificationList.slice(0,10); track $index) {
+                <div (click)="handleDetailsNotification($event,item)" ngbDropdownItem
+                    class="d-flex dropdown-item m-auto my-1 pointer px-1 py-2 rounded-3 row w-100">
+                    <div class="align-item-center col d-flex gap-3 max-width-profile">
+                        <img class="icon-notify my-auto"
+                            src="../../../assets/svgs/notification_icon_with_background.svg" alt="icon" />
+                        <div class="d-flex flex-column gap-1">
+                            <span class="text-wrap fs-13">
+                                {{ 'alerts.title' | translate }}
+                            </span>
+                            <small class="text-wrap fs-11">
+                                {{ ('alerts.' + item.alert_type_device) | translate: {
+                                device: item.data_params.device,
+                                location:item.data_params.location,
+                                value: item.data_params.value
+                                } }}
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="d-flex justify-content-center text-sm text-center text-primary">
+                <span class="view-all" [routerLink]="'/main/notification'"> {{ 'header.notification.viewAll' | translate
+                    }}</span>
+            </div>
+            }@else {
+            <div ngbDropdownItem class="d-flex dropdown-item  px-1 my-1 m-auto pointer rounded-3 row w-100">
+                <div class="align-item-center justify-content-center col-9 d-flex gap-3 max-width-profile">
+                    <span class="text-wrap text-item">
+                        {{ 'header.notification.empty' | translate }}
+                    </span>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+
+    <div class="line my-auto"></div>
+    <div ngbDropdown class=" d-flex justify-content-center align-item-center  my-auto pointer">
+        <div ngbDropdownToggle id="dropdownBasic1" class="icon-profile">
+            @if (userInfo.avatar) {
+            <img class="icon-profile" [src]="'data:image/png;base64,' +  userInfo.avatar" alt="icon" />
+            }@else {
+            <div class="profile-initials">{{ getFirstTwoCharacters(userInfo.username) }}</div>
+            }
+        </div>
+
+        <div ngbDropdownMenu class="px-1" aria-labelledby="dropdownBasic1" (click)="handleProfile()">
+            <div ngbDropdownItem class="d-flex dropdown-item my-2 px-1 m-auto pointer rounded-3 row w-100">
+                <div class="align-item-center col-9 d-flex py-2 gap-3 max-width-profile">
+                    <img class="icon-notify my-auto" src="../../../assets/svgs/User.svg" alt="icon" />
+                    <span class="text-wrap text-item">
+                        {{ 'header.profile.settings' | translate }}
+                    </span>
+                </div>
+            </div>
+            <div ngbDropdownItem class="d-flex dropdown-item  my-2 px-1 m-auto pointer rounded-3 row w-100"
+                (click)="logout($event)">
+                <div class="align-item-center col-9 d-flex gap-3 py-2 max-width-profile">
+                    <img class="icon-notify my-auto" src="../../../assets/svgs/log out.svg" alt="icon" />
+                    <span class="text-wrap text-item">
+                        {{ 'header.profile.logout' | translate }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

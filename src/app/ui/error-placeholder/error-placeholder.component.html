@@ -1,0 +1,42 @@
+ <div class="error-container">
+        <div class="error-card">
+            <!-- Server Error SVG Icon -->
+            <div class="error-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="3" width="20" height="14" rx="2" stroke="#e74c3c" stroke-width="2" fill="#ffeaea"/>
+                    <path d="M8 21l4-7 4 7" stroke="#e74c3c" stroke-width="2" fill="none"/>
+                    <circle cx="12" cy="8" r="1" fill="#e74c3c"/>
+                    <path d="M12 10v2" stroke="#e74c3c" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M2 7h20" stroke="#e74c3c" stroke-width="2"/>
+                    <circle cx="6" cy="5" r="0.5" fill="#e74c3c"/>
+                    <circle cx="8" cy="5" r="0.5" fill="#e74c3c"/>
+                    <circle cx="10" cy="5" r="0.5" fill="#e74c3c"/>
+                </svg>
+            </div>
+            
+            <!-- Status Indicator -->
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                {{ 'error_placeholder.title' | translate }}
+            </div>
+            
+            <!-- Error Title -->
+            <h1 class="error-title">{{ 'error_placeholder.unable_to_load' | translate }}</h1>
+            
+            <!-- Error Message -->
+            <p class="error-message">
+                {{ 'error_placeholder.message' | translate }}
+            </p>
+            
+            <!-- Retry Button -->
+            <button class="btn retry-btn" onclick="retryConnection()">
+                <span class="loading-spinner"></span>
+                <span class="btn-text">{{ 'error_placeholder.try_again' | translate }}</span>
+            </button>
+            
+            <!-- Help Text -->
+            <p class="help-text">
+                {{ 'error_placeholder.instruction' | translate }}
+            </p>
+        </div>
+    </div>

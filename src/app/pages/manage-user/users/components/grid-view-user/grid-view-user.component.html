@@ -1,0 +1,10 @@
+<div class="row mt-3 mx-2">
+
+    @for (item of data; track $index) {
+    <div class="col-lg-6 col-12  mb-4">
+        <app-user-card [user]="item" (handleEditEvent)="handleEditEvent.emit($event)" (handleDeleteEvent)="deleteEvent.emit($event)"
+            (handleActivateEvent)="activateEvent.emit($event)" (handleAssigneeEvent)="assigneeEvent.emit($event)">
+        </app-user-card>
+    </div>
+    }
+</div>

@@ -1,0 +1,293 @@
+.header-bar {
+  height: 56px;
+  background-color: var(--color-light-blue);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  .logo {
+    position: absolute;
+    left: 30px;
+    right: unset;
+    top: 7px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .text {
+      margin: auto;
+    }
+  }
+
+  .icon-container {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 6px;
+    background: var(--base-light-blue);
+
+    &:hover {
+      background: #fff;
+    }
+  }
+
+  .icon-profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .profile-initials {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: #c8a2c8;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.dropdown-menu.show {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: 0px;
+}
+
+.notification-dropdown{
+    min-width: 300px;
+}
+
+.icon-notify {
+  width: 20px;
+  height: 20px;
+
+  filter: var(--filter-default);
+
+}
+
+.badge-container {
+  position: relative;
+
+  .content {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: #f42a2a;
+  }
+}
+
+.max-width {
+  min-width: 350px;
+}
+
+.max-width-profile {
+  min-width: 250px;
+}
+
+.text-item {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.line {
+  width: 2px;
+  height: 50%;
+  background: var(--color-gray-light);
+}
+
+.title {
+  font-size: 20px;
+}
+
+.notify-wrapper {
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 29px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  left: 3.4px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 3px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .switch:hover */
+.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked+.slider {
+  background-color: #183153;
+}
+
+.input:focus+.slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+  transform: translateX(30px);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.view-all:hover {
+  border-bottom: 1px solid #1b2acf;
+}
+
+.fs-13 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.list-wrapper {
+  max-height: 220px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--card-bg);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--card-border);
+  }
+}
+
+.lang-wrapper {
+  border: 1px solid var(--color-gray-light);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+
+  .icon-container {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .notification-dropdown{
+    min-width: auto !important;
+}
+
+
+}

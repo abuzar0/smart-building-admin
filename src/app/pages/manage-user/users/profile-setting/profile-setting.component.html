@@ -1,0 +1,147 @@
+<div class="row w-100 mx-md-0 mx-auto">
+    <div class="card py-3 col-md-11 col-12 mx-auto mt-0 mt-md-3">
+        <div class="align-item-center d-flex gap-4 header">
+            <div class="text-center">
+                <a (click)="location.back()" class="btn"><i class="fas fa-arrow-left back-icon"></i></a>
+            </div>
+            <h3 class="text-center title-heading">{{ 'profile_setting.title' | translate }}</h3>
+        </div>
+        @if(userForm){
+        <form [formGroup]="userForm" class=" card py-3 mx-1 flex-column mt-3 row">
+            <div class="profile-container">
+                @if (userInfo.avatar) {
+                <img [src]="userImage" class="profile-image" alt="Profile Image" />
+                }@else {
+                <div class="profile-initials">{{ getFirstTwoCharacters(userInfo.username) }}</div>
+                }
+                <div class="d-flex flex-column justify-content-center ms-4 ps-4 border-left">
+                    <label class="upload-btn" for="imageUpload">{{ 'profile_setting.upload_image' | translate }}</label>
+                    <input type="file" id="imageUpload" class="d-none" (change)="onFileSelected($event)"
+                        accept="image/png, image/jpeg">
+                    <p class="text-muted mt-1 mb-0">{{ 'profile_setting.upload_note' | translate }}</p>
+                    @if(fileError.length>1){
+                    <small class="text-danger">{{fileError}}</small>
+                    }
+                </div>
+            </div>
+            <div class="col-10 col-lg-8 line ms-2 my-3"></div>
+            <div class="form-group col-lg-4 col-10">
+                <label for="building-name" class="mb-2 label">{{ 'profile_setting.user_name' | translate }}</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="text" class="form-control" id="roomNe" formControlName="username"
+                        placeholder="Enter user name" required>
+                </div>
+                @if (userForm.get('username')?.touched && userForm.get('username')?.invalid) {
+                <div class="text-danger fs-11">
+                    @if (userForm.get('username')?.errors?.['required'] || userForm.get('username')?.errors?.['pattern']) {
+                    {{ 'validation.usernameFormat' | translate }}
+                    }
+                    @else if (userForm.get('username')?.errors?.['maxlength']) {
+                    {{ 'validation.usernameMaxLength' | translate }}
+                    }
+                </div>
+                }
+            </div>
+            <div class="col-10 col-lg-8 line ms-2 my-3"></div>
+            <div class="form-group col-lg-4 col-10">
+                <label for="building-name" class="mb-2 label">{{ 'profile_setting.email' | translate }}</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="text" class="form-control" id="roomName" formControlName="email"
+                        placeholder="Enter user email" required>
+                </div>
+            </div>
+            <div class="col-10 col-lg-8 line ms-2 my-3"></div>
+            <div class="buttons-wrapper ms-2 mt-3">
+                <button class="discard-button pointer col-3 col-lg-1" (click)="discardChanges()"
+                    [disabled]="userForm.pristine">
+                    {{ 'profile_setting.discard' | translate }}
+                </button>
+                <button class="apply-changes-button  pointer col-3  col-lg-1" type="button" (click)="handleUpdate()">
+                    {{ 'profile_setting.update' | translate }}
+                </button>
+            </div>
+        </form>
+        }
+
+        <div class="align-items-baseline d-flex gap-1 mt-3">
+            <i class="fas fa-key"></i>
+            <span class="title-heading"> {{ 'profile_setting.change_password' | translate }}</span>
+        </div>
+
+        <form [formGroup]="passwordForm" class="card py-3 mx-1 flex-column mt-3 row"
+            (ngSubmit)="handlePasswordUpdate()">
+            <div class="form-group col-lg-4 col-10">
+                <label class="mb-2 label">{{ 'profile_setting.current_password' | translate }}</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control" formControlName="currentPassword"
+                        [placeholder]="'profile_setting.enter_current_password' | translate" required
+                        autocomplete="current-password">
+                </div>
+                @if(passwordForm.get('currentPassword')?.invalid && passwordForm.get('currentPassword')?.dirty &&
+                passwordForm.get('currentPassword')?.errors?.['require']){
+                <small class="text-danger">{{ 'profile_setting.current_password_required' | translate }}</small>
+                }
+                @if(passwordForm.get('currentPassword')?.invalid && passwordForm.get('currentPassword')?.dirty &&
+                passwordForm.get('currentPassword')?.errors?.['minlength']){
+                <small class="text-danger">{{ 'profile_setting.min_length_6' | translate }}</small>
+                }
+            </div>
+
+            <div class="col-10 col-lg-8 line ms-2 my-3"></div>
+
+            <div class="form-group col-lg-4 col-10">
+                <label class="mb-2 label">{{ 'profile_setting.new_password' | translate }}</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    <input type="password" class="form-control" formControlName="newPassword"
+                        [placeholder]="'profile_setting.enter_new_password' | translate" required
+                        autocomplete="new-password">
+                </div>
+                @if(passwordForm.get('newPassword')?.invalid && passwordForm.get('newPassword')?.dirty &&
+                passwordForm.get('newPassword')?.errors?.['require']){
+                <small class="text-danger">{{ 'profile_setting.new_password_required' | translate }}</small>
+                }
+                @if(passwordForm.get('newPassword')?.invalid && passwordForm.get('newPassword')?.dirty &&
+                passwordForm.get('newPassword')?.errors?.['minlength']){
+                <small class="text-danger"> {{ 'profile_setting.min_length_8' | translate }}</small>
+                }
+            </div>
+
+            <div class="col-10 col-lg-8 line ms-2 my-3"></div>
+
+            <div class="form-group col-lg-4 col-10">
+                <label class="mb-2 label">{{ 'profile_setting.confirm_new_password' | translate }}</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                    <input type="password" class="form-control" formControlName="confirmNewPassword"
+                        [placeholder]="'profile_setting.enter_confirm_new_password' | translate" required
+                        autocomplete="new-password">
+                </div>
+                @if(passwordForm.get('confirmNewPassword')?.invalid && passwordForm.get('confirmNewPassword')?.dirty &&
+                passwordForm.get('confirmNewPassword')?.errors?.['require']){
+                <small class="text-danger">{{ 'profile_setting.confirm_password_required' | translate }}</small>
+                }
+                @if(passwordForm.get('confirmNewPassword')?.invalid && passwordForm.get('confirmNewPassword')?.dirty &&
+                passwordForm.errors?.['mismatch']){
+                <small class="text-danger">{{ 'profile_setting.password_mismatch' | translate }}</small>
+                }
+            </div>
+
+            <div class="col-10 col-lg-8 line ms-2 my-3"></div>
+
+            <div class="buttons-wrapper ms-2 mt-3">
+                <button class="discard-button pointer col-3 col-lg-1" type="button" (click)="handleCancel()"
+                    [disabled]="passwordForm.pristine">
+                    {{ 'profile_setting.cancel' | translate }}
+                </button>
+                <button class="apply-changes-button pointer col-3 col-lg-1" type="submit">
+                    {{ 'profile_setting.update' | translate }}
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>

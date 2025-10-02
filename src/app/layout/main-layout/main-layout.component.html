@@ -1,0 +1,13 @@
+<div class="m-0 p-0 row w-100">
+    <div class="sidebar-container p-0 m-0" [class.collapsed]="!isSideBarOpen">
+        <app-sidebar (SideBarToggle)="sidebarToggle($event)"></app-sidebar>
+    </div>
+
+    <div class="content-container m-0 pb-5 px-0" [class.expanded]="!isSideBarOpen">
+        <app-header></app-header>
+        <div class="page-content pb-5 pt-0 px-0">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+

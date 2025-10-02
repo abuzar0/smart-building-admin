@@ -1,0 +1,51 @@
+<h4 class="mt-2">Assign Feature Permissions</h4>
+<ng-container *ngIf="userForm">
+
+    <form [formGroup]="userForm">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Feature Name</th>
+                    <th>Create</th>
+                    <th>Read</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>Control</th>
+                    <th>Assignee (Add Building / Associate Device)</th>
+                    <th>Restore</th>
+                </tr>
+            </thead>
+            <tbody formArrayName="features">
+                <ng-container *ngFor="let featureControl of featuresArray.controls; let i = index" [formGroupName]="i">
+                    <tr>
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ featureControl.get('name')?.value }}</td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'create')"></td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'read')"></td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'edit')"></td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'delete')"></td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'control')"></td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'assignee')"></td>
+                        <td><input type="checkbox" [formControl]="getFormControl(i,'restore')"></td>
+                    </tr>
+                    <tr *ngIf="featureControl.get('actions')?.errors?.['readRequired']">
+                        <td colspan="6" class="text-danger">
+                            ⚠️ "Read" must be checked if any other action is selected.
+                        </td>
+                    </tr>
+                </ng-container>
+    
+            </tbody>
+        </table>
+        <div class="col-10 col-md-10 line ms-2 my-3"></div>
+        <div class="buttons-wrapper">
+            <button class="discard-button pointer col-3 col-md-1" (click)="handleBack()">
+                Back
+            </button>
+            <button class="apply-changes-button  pointer col-3  col-md-1" type="button" (click)="handleClick()">
+                {{'Submit'}}
+            </button>
+        </div>
+    </form>
+</ng-container>

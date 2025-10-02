@@ -1,0 +1,100 @@
+.notification-card {
+    margin: 50px;
+    background: var(--card-bg-overview);
+    color: var(--text);
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    border-left: 6px solid #007bff; /* Default Blue */
+}
+
+.icon-container {
+    width: 55px;
+    height: 55px;
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: var(--text);
+}
+
+.notification-description {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.notification-time {
+    font-size: 14px;
+    color: var(--text);;
+}
+
+/* 📌 IoT Device Details Table */
+.iot-table {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--card-bg-overview);
+    color: var(--text);
+}
+
+.iot-table th, .iot-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.iot-table th {
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.iot-table td {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Effects */
+.notification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification Type Colors */
+.success { border-left-color: #28a745; }
+.success .icon-container { background: #28a745; }
+
+.warning { border-left-color: #ffc107; }
+.warning .icon-container { background: #ffc107; color: black; }
+
+.error { border-left-color: #dc3545; }
+.error .icon-container { background: #dc3545; }
+
+.info { border-left-color: #17a2b8; }
+.info .icon-container { background: #17a2b8; }
+
+
+
+:dir(rtl).notification-card{  border-right: 6px solid #007bff; }
+:dir(rtl).icon-container{left: 0px; right: 20px; }
+:dir(rtl) .error { border-right-color: #dc3545;  border-left: 0px;}
+:dir(rtl) .warning { border-right-color: #ffc107;  border-left: 0px;}
+:dir(rtl) .info { border-right-color: #17a2b8;  border-left: 0px;}
+:dir(rtl) .success { border-right-color: #28a745;  border-left: 0px;}

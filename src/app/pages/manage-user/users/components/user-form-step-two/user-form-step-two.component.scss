@@ -1,0 +1,50 @@
+.buttons-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 13px;
+
+    .discard-button {
+        display: flex;
+        height: 40px;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background-color: #F7F7F7;
+        border: 0px;
+        font-size: 14px;
+
+        &:hover {
+            background-color: #ECECEC;
+        }
+    }
+
+    .discard-disabled-button {
+        opacity: 0.5;
+        background-color: #ECECEC;
+        pointer-events: none;
+    }
+
+    .apply-changes-button {
+        display: flex;
+        height: 40px;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background-color: var(--color-sidebar-blue);
+        color: #fff;
+        border: 0px;
+        font-size: 14px;
+
+        &:disabled {
+            opacity: 0.5;
+            background: var(--color-bright-blue);
+        }
+
+        &:hover {
+            background-color: #4684F8;
+        }
+    }
+}

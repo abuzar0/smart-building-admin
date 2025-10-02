@@ -1,0 +1,257 @@
+:host {
+    --primary: #4f46e5;
+    --primary-light: #6366f1;
+    --primary-lighter: #818cf8;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+    --dark: #1f2937;
+    --light: #f9fafb;
+    --gray: #6b7280;
+    --gray-light: #e5e7eb;
+}
+
+.role-card {
+    background: var(--color-white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    border: none;
+    position: relative;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.role-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--primary);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.role-card.inactive::before {
+    background: var(--danger);
+}
+
+.role-header {
+    padding: 1.5rem 1.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.role-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.role-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px 0.75rem;
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--primary);
+}
+
+.role-icon i {
+    font-size: 1.25rem;
+}
+
+.role-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.status-active {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.status-inactive {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.role-status i {
+    margin: 0px 0.5rem;
+}
+
+.role-body {
+    padding: 0.5rem 1.5rem 1.5rem;
+}
+
+.role-meta {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    margin: 0px 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.meta-item i {
+    margin: 0px 0.5rem;
+    color: var(--primary-lighter);
+}
+
+.role-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.btn-action {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.btn-edit {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--info);
+}
+
+.btn-edit:hover {
+    background-color: var(--info);
+    color: white;
+}
+
+.btn-delete {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.btn-delete:hover {
+    background-color: var(--danger);
+    color: white;
+}
+
+.btn-toggle {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+}
+
+.btn-toggle:hover {
+    background-color: var(--warning);
+    color: white;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.empty-icon {
+    font-size: 3rem;
+    color: var(--gray-light);
+    margin-bottom: 1rem;
+}
+
+.empty-text {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.btn-add {
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+}
+
+.add-role-form {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-light);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    border-color: var(--primary-light);
+}
+
+.form-switch .form-check-input {
+    width: 3em;
+    height: 1.5em;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+@media (max-width: 768px) {
+    .role-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .role-status {
+        margin-top: 0.75rem;
+    }
+
+    .role-meta {
+        flex-direction: column;
+    }
+
+    .meta-item {
+        margin-right: 0;
+    }
+}

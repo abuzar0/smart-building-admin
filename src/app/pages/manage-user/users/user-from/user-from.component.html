@@ -1,0 +1,68 @@
+<div class="row w-100 mx-md-0 mx-auto">
+    <div class="card py-3 col-md-11 col-12 mx-auto mt-0 mt-md-3">
+        <div class="d-flex">
+            <span class="title-heading">{{ 'userManagement.form.title.' + State.toLowerCase() | translate }}</span>
+        </div>
+        @if(form){
+        <form class="flex-column mt-3 row" [formGroup]="form">
+            <div class="form-group col-xl-4 col-10">
+                <label for="building-name" class="mb-2 label">{{ 'userManagement.form.username.label' | translate }}</label>
+                <div class="input-group" [class.disabled]="isUpdate">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="text" formControlName="username" class="form-control" id="roomName"
+                        [placeholder]="'userManagement.form.username.placeholder' | translate" required>
+                </div>
+            </div>
+            <div class="col-10 col-xl-8 line ms-2 my-3"></div>
+            <div class="form-group col-xl-4 col-10">
+                <label for="building-name" class="mb-2 label">{{ 'userManagement.form.email.label' | translate }}</label>
+                <div class="input-group" [class.disabled]="isUpdate">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="text" formControlName="email" class="form-control" id="roomName"
+                    [placeholder]="'userManagement.form.email.placeholder' | translate" required>
+                </div>
+            </div>
+
+            <div class="col-10 col-xl-8 line ms-2 my-3"></div>
+
+            <div class="form-group col-xl-4 col-10">
+                <label for="building-address" class="mb-2 label">{{ 'userManagement.form.role.label' | translate }}</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-user-tag"></i></span>
+                    <div class="w-80">
+                        <app-select-search-input [selectedItem]="form.get('role')?.value" [dataSource]="roleList"
+                            [placeholder]="'Select Role'" [search]="true" (onSelectedItem)="selectedItem($event)">
+                        </app-select-search-input>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="col-10 col-md-8 line ms-2 my-3"></div>
+            <div class="form-group col-md-4 col-10">
+                <label for="building-address" class="mb-2 label">Select Building</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-building"></i></span>
+                    <div class="w-80">
+                        <ng-multiselect-dropdown class="dropdown" [placeholder]="'Assign Building'"
+                            [settings]="dropdownSettings" [data]="buildingList" [(ngModel)]="selectedItems"
+                            (onSelect)="onItemSelect($event)">
+                        </ng-multiselect-dropdown>
+                    </div>
+                </div>
+
+            </div> -->
+            <div class="col-10 col-xl-8 line ms-2 my-3"></div>
+            <div class="buttons-wrapper">
+                <button class="discard-button pointer col-3 col-xl-1" (click)="handleCancel()">
+                    {{ 'userManagement.form.buttons.cancel' | translate }}
+                </button>
+                <button class="apply-changes-button  pointer col-3  col-xl-1" [disabled]="form.invalid" type="button"
+                    (click)="handleClickEvent()">
+                    {{ 'userManagement.form.buttons.submit' | translate }}
+                </button>
+            </div>
+        </form>
+
+        }
+    </div>
+</div>

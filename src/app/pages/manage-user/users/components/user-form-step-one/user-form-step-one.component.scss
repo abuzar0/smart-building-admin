@@ -1,0 +1,144 @@
+.label {
+    color: var(--color-dark-gray-medium);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.19px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.line {
+    height: 1px;
+    background: var(--color-gray-light);
+}
+
+.option-btn {
+    display: flex;
+    padding: 14px 16px;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #E3E3E3;
+    background: var(--color-white);
+    min-width: 175px;
+    cursor: pointer;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            overflow: hidden;
+            color: var(--color-dark-gray);
+            text-overflow: ellipsis;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+        }
+
+        .text {
+            color: var(--color-medium-gray);
+            text-overflow: ellipsis;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            white-space: nowrap;
+        }
+    }
+
+    &.active {
+        border: 1px solid var(--color-bright-blue);
+        background: var(--light-blue-bg);
+    }
+}
+
+.buttons-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 13px;
+
+    .discard-button {
+        display: flex;
+        height: 40px;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background-color: #F7F7F7;
+        border: 0px;
+        font-size: 14px;
+
+        &:hover {
+            background-color: #ECECEC;
+        }
+    }
+
+    .discard-disabled-button {
+        opacity: 0.5;
+        background-color: #ECECEC;
+        pointer-events: none;
+    }
+
+    .apply-changes-button {
+        display: flex;
+        height: 40px;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background-color: var(--color-sidebar-blue);
+        color: #fff;
+        border: 0px;
+        font-size: 14px;
+
+        &:disabled {
+            opacity: 0.5;
+            background: var(--color-bright-blue);
+        }
+
+        &:hover {
+            background-color: #4684F8;
+        }
+    }
+}
+
+.input-group-text{
+    background-color: var(--color-sidebar-blue);
+    color: #fff;
+}
+
+.w-80{
+    width:calc(100% - 50px);
+}
+
+.option-btn.disabled {
+    pointer-events: none;
+    /* Prevents clicking */
+    opacity: 0.6;
+    /* Visually indicates it's disabled */
+}
+
+.disabled {
+    pointer-events: none;
+    /* Prevents clicking */
+    opacity: 0.6;
+    /* Visually indicates it's disabled */
+}
+
+::ng-deep.select {
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}

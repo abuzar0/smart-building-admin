@@ -1,0 +1,38 @@
+<div class="role-card h-100" [class.inactive]="!item.isActive">
+    <div class="role-header">
+        <h3 class="role-title">
+            <div class="role-icon">
+                <i class="fas fa-user-shield"></i>
+            </div>
+           {{item.type}}
+        </h3>
+        <span class="role-status" [class.status-active]="item.isActive" [class.status-inactive]="!item.isActive">
+            <i class="fas fa-check-circle"></i>
+            {{ item.isActive ? ('modal.role_modal.status.active' | translate) : ('modal.role_modal.status.inactive' | translate) }}
+        </span>
+    </div>
+    <div class="role-body">
+        <div class="role-meta">
+            <div class="meta-item">
+                <i class="fas fa-calendar-plus"></i>
+                <span>{{ 'modal.role_modal.meta.created' | translate }}: {{item.created | date: 'MMM d, yyyy'}}</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>{{ 'modal.role_modal.meta.updated' | translate }}: {{item.updated | date: 'MMM d, yyyy'}}</span>
+            </div>
+        </div>
+        <div class="role-actions">
+            @if(getPermission('Role Management','edit')){
+                <button class="btn btn-action btn-edit" title="Edit Role" (click)="handleEdit($event,item)">
+                    <i class="fas fa-edit"></i>
+                </button>
+            }
+            @if (getPermission('Role Management','delete')) {
+                <button class="btn btn-action btn-delete" title="Delete Role" (click)="handleDelete($event,item)">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            }
+        </div>
+    </div>
+</div>

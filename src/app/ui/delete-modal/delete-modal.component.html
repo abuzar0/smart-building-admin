@@ -1,0 +1,13 @@
+<div class="model-container">
+    <div class="icon-wrapper">
+        <img src="../../../assets/svgs/delete-icon.svg" alt="delete" />
+    </div>
+    <div class="model-text-wrapper">
+        <span class="title">{{ 'modal.delete.title' | translate }}</span>
+        <p class="descp">{{text}}</p>
+    </div>
+    <div class="btn-wrapper">
+        <button class="btn btn-light btn-default" (click)="activeModal.close('Close click')">{{ 'modal.assigne.cancel' | translate }}</button>
+        <button class="btn btn-outline-danger" (click)="handleClick()">{{ 'modal.delete.delete' | translate }}</button>
+    </div>
+</div>

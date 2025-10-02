@@ -1,0 +1,55 @@
+<div class="mx-auto my-2 table-responsive-sm row w-100">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Permissions</th>
+                <th scope="col">Active</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @for (item of data; track $index) {
+            <tr>
+                <th scope="row" [class.border-bottom-0]="$last">{{$index+1}}</th>
+                <td [class.border-bottom-0]="$last">{{item.name}}</td>
+                <td [class.border-bottom-0]="$last">
+                    @for (permission of permissionList; track $index) {
+                    @if(item.actions[permission.key]){
+                    <span class="badge me-1" [ngClass]="{
+                              'bg-success': permission.key === 'create',
+                              'bg-info': permission.key === 'read',
+                              'bg-warning': permission.key === 'edit',
+                              'bg-danger': permission.key === 'delete',
+                              'bg-secondary': permission.key === 'control'
+                            }">
+                        {{ permission.label }}
+                    </span>
+                    }
+                    }
+                </td>
+                <td [class.border-bottom-0]="$last">
+                    <span class="badge" [ngClass]="{
+                        'bg-success': item.isActive,
+                        'bg-danger': !item.isActive
+                      }">
+                        <i class="fas" [ngClass]="item.isActive ? 'fa-check-circle' : 'fa-times-circle'"></i>
+                        {{ item.isActive ? 'Active' : 'InActive' }}
+                    </span>
+                </td>
+                <td [class.border-bottom-0]="$last">
+                    @if(item.isActive){
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-danger btn-sm" (click)="handleDelete($event,item)">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    }
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

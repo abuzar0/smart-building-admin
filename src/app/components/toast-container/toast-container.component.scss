@@ -1,0 +1,9 @@
+.toast{
+    width: 330px;
+    height: 80px;
+   
+}
+
+::ng-deep.toast-body{
+    padding: 0px;
+}

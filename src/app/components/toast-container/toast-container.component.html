@@ -1,0 +1,6 @@
+@for (toast of toastService.toasts; track toast) {
+<ngb-toast  [autohide]="true" [delay]="toast.delay || 5000"
+    (hidden)="toastService.remove(toast)">
+    <ng-template [ngTemplateOutlet]="toast.template"  [ngTemplateOutletContext]="{ content: toast.content }"></ng-template>
+</ngb-toast>
+}

@@ -1,0 +1,33 @@
+<nav class="card mb-3 mx-3 px-2 border-0" aria-label="Breadcrumb" [dir]="'ltr'">
+    <ol class="breadcrumb mb-2 mt-2">
+        @for (crumb of displayCrumbs; track $index) {
+        <li class="breadcrumb-item" [class.active]="$last && currentLang=='en'"
+            [class.active]="$first && currentLang=='ar'"
+            [attr.aria-current]="$last && currentLang=='en' ? 'page' : null"
+            [attr.aria-current]="$first && currentLang=='ar' ? 'page' : null">
+            @if(!$last){
+            @if($first && currentLang=='ar'){
+            <span> {{ crumb.label }}</span>
+
+            }@else {
+            <ng-container>
+                <a [routerLink]="crumb.route">{{ crumb.label }}</a>
+            </ng-container>
+            }
+            }
+            @if($last && currentLang=='ar'){
+            <!-- like first item in english -->
+            <ng-container>
+                <a [routerLink]="crumb.route">{{ crumb.label }}</a>
+            </ng-container>
+            }
+
+            @if($last && (currentLang=='en')){
+            <ng-container>
+                {{ crumb.label }}
+            </ng-container>
+            }
+        </li>
+        }
+    </ol>
+</nav>

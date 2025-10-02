@@ -1,0 +1,38 @@
+<div class='container p-0'>
+    <div class='dropdown'>
+        <!-- <div class='label'>{{label}}</div> -->
+         
+        <div class='form-control py-2 select' (click)="toggleDropdown()">
+            <div class="" [hidden]="isHidden"> {{placeholder}}</div>
+            <div class='selected' [hidden]="!isHidden"> {{selectedValue}}</div>
+            <div class='caret' [ngClass]="showDropdown? 'caret-rotate':''"></div>
+        </div>
+        <ul #dropdownMenu [ngClass]="{'open-up': openUpward}" class='menu card' *ngIf="showDropdown">
+            <div class="input-field my-2" *ngIf="search">
+                <input class="mx-2 form-control  w-100" placeholder="search ..." [(ngModel)]="searchText" />
+            </div>
+            <ng-container *ngIf="dataSource?.length === 0; else showlist">
+                <li value="" selected>-- empty list --</li>
+            </ng-container>
+            <ng-template #showlist>
+                <ng-container *ngIf="!isObjectList(); else objectList">
+                    <li [ngClass]="item == selectedItem?'select-item':''"
+                        *ngFor="let item of dataSource | selectInputFilter : searchText" (click)="OnChange(item)">{{item}}</li>
+                </ng-container>
+
+
+                <ng-template #objectList>
+                    <li [ngClass]="hasTitleProperty(item) ? item.title : getStatus(item ,selectedItem)?'select-item':'false'"
+                        *ngFor="let item of dataSource | selectInputFilter : searchText" (click)="OnChange(item)">
+                        {{ hasTitleProperty(item) ? item.title : item.name}}
+                        <ng-container *ngIf="isSubText">
+                            <p class="sub-text"> this space are on {{item?.floors?.name}} location {{item?.floors?.location}}</p>
+                        </ng-container>
+                        
+                    </li>
+                </ng-template>
+            </ng-template>
+
+        </ul>
+    </div>
+</div>

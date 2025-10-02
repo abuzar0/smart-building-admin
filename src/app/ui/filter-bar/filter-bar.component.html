@@ -1,0 +1,46 @@
+<div class="gap-xl-4  mx-3 mt-2 row filter-bar-header" [ngClass]="classGapRow">
+
+
+    <div class="col-xl-6 filter-menus-list p-xl-0" [ngClass]="classTypeTabs">
+        @if(tabs){
+            <nav #tabContainer class="navigation-tab">
+                @for (tab of tabs; track $index) {
+    
+                <div  #tabItem class="navigation-tab-item" [class.active]="activeTab === $index" (click)="setActiveTab($index)">
+                    <span class="text">{{ tab.type | replaceUnderscore}}</span>
+                </div>
+                }
+            </nav>
+        }
+    </div>
+    
+    
+    
+
+    <div class="col-xl" [ngClass]="classTypeSearch">
+        <div class="justify-content-md-end justify-content-center gap-3 gap-sm-0 row">
+           
+            
+            <ng-content></ng-content>
+            
+            @if (isSearchEnable) {
+
+            <div class="search-container col col-xl-4  ">
+                <input type="text" class="search-input w-100" [placeholder]="'filterbar.placeholder' | translate" [(ngModel)]="searchTerm"
+                    maxlength="50" (ngModelChange)="onSearchTermChange($event)" />
+                <div class="cross-icon" (click)="cancelSearch()">
+                    @if(searchTerm.length>0){
+                    <i class="icon fas fa-xmark" [title]="'filterbar.clearIconAlt' | translate"> </i>
+                    }
+                </div>
+                <div class="search-button" [class.search-button-active]="searchTerm!=''" (click)="searchEvent($event)">
+                    <i class="icon fas fa-search" [title]="'filterbar.searchIconAlt' | translate"></i>
+                </div>
+            </div>
+
+            }
+        </div>
+
+    </div>
+
+</div>

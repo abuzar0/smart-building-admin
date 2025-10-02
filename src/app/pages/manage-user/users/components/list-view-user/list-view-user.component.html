@@ -1,0 +1,86 @@
+<div class="row mt-3 mx-3 table-responsive-sm">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                <!-- <th scope="col">Permissions</th> -->
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (user of userList; track $index) {
+            <tr>
+                <th scope="row" [class.border-bottom-0]="$last">{{ $index + 1 }}</th>
+                <td [class.border-bottom-0]="$last">{{ user.username }}</td>
+                <td [class.border-bottom-0]="$last">{{ user.email }}</td>
+                <td [class.border-bottom-0]="$last">{{ user.role.type }}</td>
+
+                <!-- Permissions Column -->
+                <!-- <td [class.border-bottom-0]="$last">
+                    <div class="d-flex flex-column">
+                        @for (permission of getUserPermissions(user); track permission.name) {
+                        <div class="d-flex align-items-center mb-1">
+                            <span class="fw-bold me-2">{{ permission.name }}</span>
+                            <div class="d-flex flex-wrap">
+                                @for (action of permission.actions; track action) {
+                                    @if (action!='assignee' && action !='restore') {
+                                        <span class="badge me-1" [ngClass]="{
+                                              'bg-success': action === 'create',
+                                              'bg-info': action === 'read',
+                                              'bg-warning': action === 'edit',
+                                              'bg-danger': action === 'delete',
+                                              'bg-secondary': action === 'control',
+                                            }">
+                                            {{  action}}
+                                        </span>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </td> -->
+                <!-- Active Status -->
+                <td [class.border-bottom-0]="$last">
+                    <span class="badge" [ngClass]="{
+                        'bg-success': user.isActive,
+                        'bg-danger': !user.isActive
+                      }">
+                        <i class="fas" [ngClass]="user.isActive ? 'fa-check-circle' : 'fa-times-circle'"></i>
+                        {{ user.isActive ? 'Active' : 'Inactive' }}
+                    </span>
+                </td>
+
+                <!-- Action Buttons -->
+                <td [class.border-bottom-0]="$last">
+                    <div class="d-flex gap-2">
+                        @if(!user.isActive){
+                            <button class="btn btn-primary btn-sm" title="Activate User">
+                                <i class="fa-solid fa-trash-can-arrow-up" (click)="handleActivate($event,user)"></i>
+                            </button>
+                        }
+                        @if(!userAssigneeListId.includes(user._id)){
+                            <button class="btn btn-secondary btn-edit" title="Assignee User" (click)="handleAssignee($event, user)">
+                                <i class="fa-solid fa-users-cog"></i>
+                            </button>
+                
+                        }
+                        @if(user.isActive) {
+                        <button class="btn btn-primary btn-sm" title="Edit User" (click)="handleEdit($event,user)">
+                            <i class="fa-solid fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" title="DeActivate User" (click)="handleDelete($event,user)">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        }
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
