@@ -138,10 +138,10 @@
     }
   },
   "building_dashboard": {
-    "total_floors": "Total Floors",
-    "total_rooms": "Total Rooms",
+    "total_vendor": "Total Vendors",
+    "total_users": "Total User",
     "total_devices": "Total Devices",
-    "online_devices": "Online Devices",
+    "total_building": "Total Buildings",
     "offline_devices": "Offline Devices",
     "today_energy_used": "Today's Energy Used",
     "today_energy_cost": "Today's Energy Cost",

@@ -137,10 +137,11 @@
       "description": "مساحات سكنية وتجارية"
     }
   },
-  "building_dashboard": {
-    "total_floors": "إجمالي الطوابق",
-    "total_rooms": "إجمالي الغرف",
+  "building_dashboard":{
+    "total_vendor": "إجمالي الموردين",
+    "total_users": "إجمالي المستخدمين",
     "total_devices": "إجمالي الأجهزة",
+    "total_building": "إجمالي المباني",
     "online_devices": "الأجهزة المتصلة",
     "offline_devices": "الأجهزة غير المتصلة",
     "today_energy_used": "الطاقة المستخدمة اليوم",

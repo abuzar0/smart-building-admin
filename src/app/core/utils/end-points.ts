@@ -24,6 +24,9 @@ export const API_END_POINT = {
         UPDATE_USER_PROFILE: '/user',
         ASSIGNEE_USER_BUILDING: '/user/building-assignee'
     },
+    STATS:{
+        STATS_LIST:'/building/summery'
+    },
     NOTIFICATION: {
         LIST_NOTIFICATION: '/notification/list',
         UPDATE_NOTIFICATION_STATUS: '/notification',

@@ -1,1 +1,55 @@
-<p>main works!</p>
+<div class="mt-3 mx-3">
+    @defer(when !loading){
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="floor-card">
+                <div class="icon-box">
+                    <i class="fas fa-store icon-floor"></i>
+                </div>
+                <div class="card-title">{{ 'building_dashboard.total_vendor' | translate }}</div>
+                <div class="floor-number icon-floor">{{statsOverview.vendors | numberformat}}</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="floor-card">
+                <div class="icon-box">
+                    <i class="fas fa-users icon-room"></i>
+                </div>
+                <div class="card-title">{{ 'building_dashboard.total_users' | translate }}</div>
+                <div class="floor-number icon-room">{{statsOverview.users | numberformat}}</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="floor-card">
+                <div class="icon-box">
+                    <i class="fas fa-microchip icon-devices"></i>
+                </div>
+                <div class="card-title">{{ 'building_dashboard.total_devices' | translate }}</div>
+                 <div class="floor-number icon-devices-online">{{statsOverview.devices ||0 |
+                    numberformat}}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="floor-card">
+                <div class="icon-box">
+                    <i class="fas fa-building icon-devices-online"></i>
+                </div>
+                <div class="card-title">{{ 'building_dashboard.total_building' | translate }}</div>
+                <div class="floor-number icon-devices">{{statsOverview.buildings | numberformat}}</div>
+               
+            </div>
+        </div>
+    </div>
+    }@placeholder {
+    <div class="row">
+        @for (item of [].constructor(30); track $index) {
+        <div class="col-lg-3 col-12">
+            <app-overview-card-skeleton></app-overview-card-skeleton>
+        </div>
+        }
+    </div>
+    }@error {
+    <app-error-placeholder></app-error-placeholder>
+    }
+</div>
